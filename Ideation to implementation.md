@@ -1,7 +1,7 @@
 Sogeti's approach to AI transformation is a phased process that begins with strategic discovery and moves through solutioning and scaffolding to final implementation, leveraging specialized teams at each stage.
 Here's a detailed process flow description:
-Process Flow Description: From Jump Start to Last-Mile Development
-Phase 1: Discovery & Use Case Definition (Jump Start Team)
+## Process Flow Description: From Jump Start to Last-Mile Development
+### Phase 1: Discovery & Use Case Definition (Jump Start Team)
 The journey begins with a Jump Start workshop, an immersive 2-day strategic discovery experience. This phase is led by a dedicated Jump Start team, typically composed of AI Research Specialists, Knowledge Architects, and Design Thinking Facilitators. The core philosophy is strategic experimentation guided by experts, focusing on uncovering business opportunities rather than just showcasing technology.
  * Pre-Workshop Phase (1-2 Weeks):
    * Initial Alignment Meeting: Define objectives, confirm participants, and set expectations.
@@ -23,7 +23,7 @@ The journey begins with a Jump Start workshop, an immersive 2-day strategic disc
    * Documentation Delivery: Complete handoff of all materials including code repository, technical documentation, and strategic recommendations.
    * Optional Follow-up Session: Address questions after materials review.
    * Pod Engagement Planning: If desired, structure ongoing AI Pod support.
-Phase 2: Solutioning & Scaffolding (AI Pod)
+### Phase 2: Solutioning & Scaffolding (AI Pod)
 Following the Jump Start, the engagement often transitions to the AI Innovation Pod, a revolutionary delivery model providing flexible access to a unified team of specialists. The Pod is designed for ongoing strategic advisory, refinement, and proof-of-concept/MVP development.
  * Refinement & Business Case Development:
    * The Pod refines use cases identified during the Jump Start, developing detailed business requirements and calculating ROI to build strong business cases.
@@ -35,7 +35,7 @@ Following the Jump Start, the engagement often transitions to the AI Innovation 
  * Architecture Design & Governance:
    * The AI Pod provides technical architecture guidance, advising on integration approaches and sharing insights on security and scalability considerations.
    * They establish governance frameworks for AI-generated content, quality assurance, and source verification.
-Phase 3: Last-Mile Development (Dedicated Build Team)
+### Phase 3: Last-Mile Development (Dedicated Build Team)
 Once the solution is well-defined, the scaffolding is in place, and the MVP is validated, a larger, dedicated build team (onshore or offshore) is brought in for full-scale production implementation.
  * Transition & Strategic Oversight:
    * The AI Pod maintains strategic oversight and quality assurance throughout the full-scale implementation.
@@ -46,8 +46,9 @@ Once the solution is well-defined, the scaffolding is in place, and the MVP is v
  * Knowledge Transfer & Optimization:
    * The Jump Start and Pod engagement phases include knowledge transfer to enable internal teams.
    * The dedicated build team ensures ongoing optimization and scaling of the deployed solution, with continued guidance from the AI Pod for strategic direction and advanced problem-solving.
+
 This phased approach ensures that AI initiatives are strategically aligned from the start, de-risked through iterative prototyping, and ultimately scaled effectively for long-term business value.
-Process Flow Diagram Outline:
+## Process Flow Diagram Outline:
 A process flow diagram for this approach would visually represent the three main phases and their key activities:
  * Shape Legend:
    * Oval: Start/End
@@ -60,7 +61,8 @@ A process flow diagram for this approach would visually represent the three main
    * AI Innovation Pod
    * Dedicated Build Team (Onshore/Offshore)
    * Client/Stakeholders
-Diagram Flow:
+
+## Diagram Flow:
  * Start (Oval): Client identifies AI challenge.
  * Phase 1: Discovery & Use Case Definition (Jump Start Team Swimlane)
    * Rectangle: Pre-Workshop Alignment & Prep.
