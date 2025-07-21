@@ -1,0 +1,482 @@
+[
+  {
+    "category": "Design your AI application",
+    "question": "Which of the following workload components do you containerize?",
+    "description": "Containerization helps ensure that independently deployable components are fully self-contained and helps streamline deployments.",
+    "responses": [
+      "We containerize data-processing, model-inferencing, and user-authentication microservices.",
+      "We containerize our AI models.",
+      "We containerize our data-processing pipelines.",
+      "We containerize our databases, caching solution, or other supporting infrastructure.",
+      "None of the above."
+    ]
+  },
+  {
+    "category": "Design your AI application",
+    "question": "Which factors influence your decision to colocate AI components with other workload components?",
+    "description": "Colocation can affect latency, cost, and operational complexity. Understanding these factors is key to an efficient architecture.",
+    "responses": [
+      "We colocate components primarily to meet low-latency requirements between them.",
+      "We colocate to optimize cost by sharing compute resources and infrastructure.",
+      "Security and compliance boundaries dictate where our components must reside, influencing colocation decisions.",
+      "We colocate to simplify operations and share management tooling across components.",
+      "We haven't strategically considered the colocation of our components."
+    ]
+  },
+  {
+    "category": "Design your AI application",
+    "question": "What aspects of your workload make an orchestrator an ideal design choice?",
+    "description": "Orchestrators like Kubernetes are crucial for managing complex, containerized applications, providing scalability, and resilience.",
+    "responses": [
+      "We use an orchestrator for automated scaling, self-healing, and service discovery.",
+      "We need to manage complex, multi-container applications with intricate dependencies.",
+      "We require robust and automated deployment strategies, such as rolling updates and rollbacks.",
+      "Our large number of microservices requires an orchestrator for reliable communication and management.",
+      "We do not use an orchestrator; we manage our containers and services manually."
+    ]
+  },
+  {
+    "category": "Design your AI application",
+    "question": "What aspects of your workload make an API gateway an ideal design choice?",
+    "description": "An API gateway acts as a single entry point for clients, simplifying management of cross-cutting concerns like authentication, rate limiting, and routing.",
+    "responses": [
+      "We need a single, unified entry point to route requests to multiple backend services.",
+      "We use it to centrally manage cross-cutting concerns like authentication, rate limiting, and logging.",
+      "We want to decouple our clients from the backend microservice architecture.",
+      "We use a gateway to aggregate data from multiple services into a single response for the client.",
+      "We do not use an API gateway; clients call our backend services directly."
+    ]
+  },
+  {
+    "category": "Design your AI application",
+    "question": "Which design patterns best suit your workload?",
+    "description": "Using established design patterns (e.g., Strangler, Saga, CQRS) helps create robust, scalable, and maintainable systems.",
+    "responses": [
+      "We use patterns like Microservices, CQRS, and Event Sourcing for scalability and clear separation of concerns.",
+      "We employ the Ambassador or Sidecar pattern to manage service-to-service communication and networking.",
+      "We use the Strangler Fig pattern to incrementally modernize and replace legacy components.",
+      "Our workload is primarily a monolithic application, though it may follow some service-oriented principles.",
+      "We have not formally adopted or identified specific architectural design patterns."
+    ]
+  },
+  {
+    "category": "Design your AI application",
+    "question": "Which factors influence your choice of frameworks and libraries?",
+    "description": "The choice of frameworks impacts development speed, performance, community support, and long-term maintainability.",
+    "responses": [
+      "Performance characteristics and suitability for the specific AI task (e.g., PyTorch vs. TensorFlow).",
+      "The strength of the community, quality of documentation, and availability of pre-trained models.",
+      "Our team's existing skill set and familiarity with the framework's ecosystem.",
+      "Licensing agreements, cost, and the promise of long-term support from maintainers.",
+      "We tend to choose the first framework we find that appears to solve the immediate problem."
+    ]
+  },
+  {
+    "category": "Design your AI application",
+    "question": "Which nonfunctional requirements must your workload meet?",
+    "description": "Nonfunctional requirements (NFRs) like performance, security, and reliability are critical for production-grade AI systems.",
+    "responses": [
+      "We have defined and measured NFRs for latency, throughput, and high availability.",
+      "We adhere to strict security and data privacy requirements based on compliance standards like GDPR or HIPAA.",
+      "Our system must meet specific requirements for scalability and elasticity to handle variable loads.",
+      "We have defined requirements for system maintainability, observability, and monitoring.",
+      "We have not formally defined or tracked nonfunctional requirements for our workload."
+    ]
+  },
+  {
+    "category": "Choose an application platform",
+    "question": "Which considerations do you apply when you build and run your exploratory data analysis (EDA) platform?",
+    "description": "A well-designed EDA platform accelerates data science experimentation with access to data, tools, and compute.",
+    "responses": [
+      "We provide secure, easy access to diverse data sources for analysis.",
+      "We offer interactive computing environments (e.g., Jupyter) with scalable compute resources.",
+      "Our platform integrates common data science libraries and advanced visualization tools.",
+      "The platform is designed for collaboration, allowing users to share notebooks and findings.",
+      "We perform EDA on local machines with no centralized platform or collaborative tools."
+    ]
+  },
+  {
+    "category": "Choose an application platform",
+    "question": "When you train or fine tune your own models, which considerations do you apply for platform implementation and management?",
+    "description": "An effective training platform provides scalable compute, experiment tracking, and efficient data handling.",
+    "responses": [
+      "We use managed AI platforms with on-demand access to specialized hardware like GPUs or TPUs.",
+      "We implement robust experiment tracking to log parameters, metrics, and model artifacts for reproducibility.",
+      "We employ distributed training strategies to accelerate model development cycles.",
+      "We have optimized data loading and preprocessing pipelines for maximum training efficiency.",
+      "We primarily train models on individual developer machines or a single shared server."
+    ]
+  },
+  {
+    "category": "Choose an application platform",
+    "question": "Which application platform-related considerations do you apply to your workload for model hosting and inferencing?",
+    "description": "The inferencing platform must be scalable, reliable, and cost-effective to serve model predictions in production.",
+    "responses": [
+      "We use managed model serving platforms that handle autoscaling, versioning, and A/B testing.",
+      "We optimize the model and its runtime for low latency and high throughput.",
+      "We implement comprehensive monitoring for model performance, data drift, and resource utilization.",
+      "We deploy models across multiple availability zones or regions for high availability.",
+      "We deploy our model as a simple web service on a single, manually-managed virtual machine."
+    ]
+  },
+  {
+    "category": "Choose an application platform",
+    "question": "Which key considerations do you consider when you choose your compute platform for inferencing and hosting?",
+    "description": "The choice of compute (CPU, GPU, specialized accelerators) directly impacts inference latency, throughput, and cost.",
+    "responses": [
+      "We select compute (CPU, GPU, etc.) based on the specific needs of the model.",
+      "We carefully evaluate the cost-performance trade-offs of different compute options.",
+      "We leverage autoscaling to match compute resources to real-time inference demand.",
+      "We prefer serverless or managed platforms to minimize our operational overhead.",
+      "We use general-purpose CPUs for all inference needs without specific performance analysis."
+    ]
+  },
+  {
+    "category": "Design training data",
+    "question": "What considerations and principles do you apply when you ingest and analyze data for your workload?",
+    "description": "A systematic approach to data ingestion and analysis ensures data quality, relevance, and suitability for the AI model.",
+    "responses": [
+      "We have automated pipelines for ingesting data from both batch and streaming sources.",
+      "We perform thorough EDA to understand data distributions, biases, and anomalies before training.",
+      "We maintain a data catalog to document metadata, lineage, and ownership.",
+      "We apply automated data quality checks and validation at the point of ingestion.",
+      "We manually ingest data on an as-needed basis without a formalized process."
+    ]
+  },
+  {
+    "category": "Design training data",
+    "question": "How do you manage data collection and segmentation in your organization?",
+    "description": "Proper data collection and segmentation are fundamental for training specialized models and evaluating them on representative data splits.",
+    "responses": [
+      "We have a defined strategy for continuous data collection from diverse and representative sources.",
+      "We version our datasets to ensure the reproducibility of our experiments.",
+      "We use stratified sampling to create representative training, validation, and test sets.",
+      "We actively work to identify and mitigate sampling bias in our data collection process.",
+      "We use a single, static dataset for all training and evaluation purposes."
+    ]
+  },
+  {
+    "category": "Design training data",
+    "question": "What steps do you take to prepare your data for ingestion?",
+    "description": "Data preparation, including cleaning, transformation, and feature engineering, is a critical step that significantly impacts model performance.",
+    "responses": [
+      "We have automated pipelines for data cleaning, handling missing values, and detecting outliers.",
+      "We perform feature engineering and transformation as part of a reproducible, version-controlled pipeline.",
+      "We have a feature store to manage, share, and reuse features across different models.",
+      "We enrich our data by programmatically joining it with other relevant data sources.",
+      "We perform most data preparation steps manually in an ad-hoc fashion."
+    ]
+  },
+  {
+    "category": "Design training data",
+    "question": "What strategies do you use for data maintenance and retention?",
+    "description": "Data maintenance and retention policies are crucial for compliance, cost management, and ensuring long-term data quality.",
+    "responses": [
+      "We have a defined data retention policy based on business and regulatory requirements.",
+      "We have automated processes to archive or delete stale or irrelevant data to manage costs.",
+      "We periodically review and update our datasets to maintain their relevance and quality.",
+      "We implement data lineage tracking to understand the origin and transformations of our data.",
+      "We keep all data indefinitely without a formal retention or maintenance strategy."
+    ]
+  },
+  {
+    "category": "Design grounding data",
+    "question": "Which of these best practices do you apply when you index your grounding data?",
+    "description": "For retrieval-augmented generation (RAG), proper indexing is key to quickly finding relevant information to ground the model's responses.",
+    "responses": [
+      "We chunk documents into contextually meaningful segments before creating embeddings.",
+      "We use state-of-the-art embedding models that are suited to our specific domain and task.",
+      "We experiment with different vector index strategies (e.g., HNSW, IVF) to balance recall and speed.",
+      "We enrich our index with metadata to enable filtering for more targeted retrieval.",
+      "We embed and index entire documents without any chunking or optimization."
+    ]
+  },
+  {
+    "category": "Design grounding data",
+    "question": "How do you optimize search performance when you use indexes?",
+    "description": "Optimizing search performance ensures that the RAG system can retrieve relevant context with low latency, which is critical for real-time applications.",
+    "responses": [
+      "We use a hybrid search approach, combining vector similarity with traditional keyword search.",
+      "We implement pre-filtering using metadata to narrow the search space before vector search.",
+      "We use a re-ranking model to improve the relevance of the top search results.",
+      "We fine-tune our embedding models on domain-specific data to improve retrieval accuracy.",
+      "We rely solely on basic vector similarity search with the default system parameters."
+    ]
+  },
+  {
+    "category": "Design grounding data",
+    "question": "What steps do you take to make sure your data is ready for use in your workload?",
+    "description": "The quality of grounding data directly affects the quality of the generated output. Data must be clean, relevant, and up-to-date.",
+    "responses": [
+      "We have automated pipelines to clean and preprocess raw data (e.g., remove HTML, correct OCR).",
+      "We perform data quality checks to identify and filter out irrelevant or low-quality documents.",
+      "We enrich data with structured metadata (e.g., creation date, source, author) for better context.",
+      "We have a process for subject matter experts to review and curate the grounding data.",
+      "We use raw data as-is with no dedicated preparation or curation process."
+    ]
+  },
+  {
+    "category": "Design grounding data",
+    "question": "Which of these best practices do you use to maintain indexes?",
+    "description": "Indexes for grounding data are not static; they require regular maintenance to incorporate new information and remove outdated content.",
+    "responses": [
+      "We have an automated process to incrementally update the index with new and modified data.",
+      "We periodically rebuild the entire index to ensure optimal structure and purge deleted items.",
+      "We actively monitor the index for performance degradation and data drift.",
+      "We version our indexes alongside our data and embedding models to ensure consistency.",
+      "Our index is static and only updated manually on an infrequent, ad-hoc basis."
+    ]
+  },
+  {
+    "category": "Design your data platform",
+    "question": "What practices do you implement when you store aggregated data?",
+    "description": "Properly storing aggregated data (e.g., in a data warehouse or lakehouse) facilitates business intelligence, analytics, and model feature generation.",
+    "responses": [
+      "We use a data warehouse or lakehouse architecture for our aggregated data.",
+      "We use efficient columnar storage formats like Parquet or ORC.",
+      "We implement partitioning and bucketing strategies to optimize query performance.",
+      "We have well-defined schemas and data models (e.g., star schema) for our aggregated data.",
+      "We store aggregated data as flat files (e.g., CSV) in a simple file store."
+    ]
+  },
+  {
+    "category": "Design your data platform",
+    "question": "What design considerations do you apply when you process data on your platform?",
+    "description": "An efficient data processing platform can handle large volumes of data and complex transformations reliably and cost-effectively.",
+    "responses": [
+      "We use a scalable data processing framework like Spark or Flink for both batch and stream processing.",
+      "We design our data pipelines to be idempotent and restartable to handle failures gracefully.",
+      "We separate compute and storage to allow for independent scaling and cost optimization.",
+      "We use a workflow orchestration tool (e.g., Airflow, Dagster) to manage complex data pipelines.",
+      "We rely on custom scripts running on a single machine for our data processing."
+    ]
+  },
+  {
+    "category": "Design your data platform",
+    "question": "Which practices do you follow when you optimize search indexes for your workload?",
+    "description": "Optimizing the platform for search indexes involves tuning the underlying infrastructure and services for cost, speed, and recall.",
+    "responses": [
+      "We select vector database solutions that provide tunable parameters for the ANN index (e.g., HNSW's `M` and `efConstruction`).",
+      "We benchmark different instance types and storage options to find the best cost-performance for our vector database.",
+      "We implement caching strategies for frequently accessed queries and results.",
+      "We use infrastructure-as-code (IaC) to manage and replicate our search index infrastructure.",
+      "We use the default configuration of our chosen vector search tool without performance tuning."
+    ]
+  },
+  {
+    "category": "Incorporate MLOps and GenAIOps",
+    "question": "What steps do you take to streamline the data-operations processes?",
+    "description": "Streamlining data operations (DataOps) ensures that high-quality data is reliably and efficiently available for model training and inference.",
+    "responses": [
+      "We apply CI/CD principles to our data pipelines, including automated testing and deployment.",
+      "We implement automated data quality monitoring and alerting to detect issues proactively.",
+      "We use a feature store to version, share, and manage features consistently for training and serving.",
+      "We have automated data validation checks integrated directly into our pipelines.",
+      "Our data processes are primarily manual and are executed on an ad-hoc basis."
+    ]
+  },
+  {
+    "category": "Incorporate MLOps and GenAIOps",
+    "question": "What actions do you take to streamline how you operationalize AI models in your workload?",
+    "description": "MLOps practices automate the lifecycle of AI models, from training and validation to deployment and monitoring, increasing speed and reliability.",
+    "responses": [
+      "We have fully automated CI/CD pipelines for training, validating, and deploying models into production.",
+      "We use a model registry to version and manage our trained models and their associated artifacts.",
+      "We use infrastructure as code (IaC) to provision and manage all of our ML-related infrastructure.",
+      "We have integrated security scanning and vulnerability testing into our model deployment pipelines.",
+      "We deploy models manually by copying the necessary files to a production server."
+    ]
+  },
+  {
+    "category": "Incorporate MLOps and GenAIOps",
+    "question": "Which considerations do you apply when you deploy and monitor your models?",
+    "description": "A robust deployment and monitoring strategy is essential for ensuring models perform as expected in production and for detecting issues like model drift.",
+    "responses": [
+      "We use safe deployment strategies like canary releases or A/B testing to roll out new models.",
+      "We monitor for data drift, concept drift, and model performance degradation over time.",
+      "We monitor key operational metrics like inference latency, throughput, and error rates.",
+      "We have automated alerting and a defined process for model retraining and redeployment.",
+      "We deploy a model and only investigate its performance if users report a problem."
+    ]
+  },
+  {
+    "category": "Incorporate MLOps and GenAIOps",
+    "question": "How do you implement common operational processes for your AI workload?",
+    "description": "This refers to the integration of MLOps/GenAIOps into standard operational practices like logging, monitoring, and incident response.",
+    "responses": [
+      "We integrate model performance and operational logs into a centralized logging and analysis platform.",
+      "We have unified dashboards that provide a single-pane-of-glass view of application and model health.",
+      "Our incident response playbooks include specific steps for diagnosing and mitigating AI model-related issues.",
+      "We conduct regular operational readiness reviews before deploying new AI components.",
+      "Operational processes for AI components are handled separately from the rest of our application."
+    ]
+  },
+  {
+    "category": "Manage operations",
+    "question": "How do you design operations processes around your AI workload?",
+    "description": "Designing specific operations processes for AI workloads ensures that unique aspects like model monitoring and retraining are handled effectively.",
+    "responses": [
+      "We have defined on-call rotations and runbooks specifically for AI/ML system failures.",
+      "We have a clear, automated process for triggering model retraining, validation, and redeployment.",
+      "We have specific cost management processes for AI/ML resources like GPU usage and data storage.",
+      "We integrate AI component monitoring into our organization's overall observability strategy.",
+      "We treat AI components as a black box and use the same generic operational processes as for any other service."
+    ]
+  },
+  {
+    "category": "Manage operations",
+    "question": "How do you deploy and test your workload's AI components?",
+    "description": "A robust deployment and testing strategy for AI components minimizes the risk of introducing regressions or performance issues into production.",
+    "responses": [
+      "We use automated CI/CD pipelines with staged deployments (e.g., dev, staging, prod).",
+      "We use shadow deployments to test new models with production traffic without affecting users.",
+      "We perform integration and end-to-end testing that fully includes the AI models.",
+      "We have automated rollback procedures in case a deployment fails or performs poorly.",
+      "We deploy AI components manually and perform only basic smoke tests after deployment."
+    ]
+  },
+  {
+    "category": "Manage operations",
+    "question": "Which DevOps and automation practices do you apply in your AI workload?",
+    "description": "Applying DevOps principles like CI/CD, IaC, and automated testing to AI workloads (MLOps) accelerates delivery and improves reliability.",
+    "responses": [
+      "We use Git-based workflows for all artifacts, including code, model configuration, and infrastructure.",
+      "We use Infrastructure as Code (e.g., Terraform) to manage all of our cloud resources.",
+      "Our CI/CD pipelines automate the testing, building, and deployment of all workload components.",
+      "We have automated configuration management to ensure consistency across all environments.",
+      "We rely on manual processes for infrastructure provisioning and application deployment."
+    ]
+  },
+  {
+    "category": "Manage operations",
+    "question": "How do you appropriately and accurately document your workload's components?",
+    "description": "Comprehensive documentation is vital for maintainability, onboarding new team members, and ensuring operational clarity.",
+    "responses": [
+      "We maintain architectural and data flow diagrams that are regularly reviewed and updated.",
+      "We use model cards to document each model's performance, limitations, and intended use cases.",
+      "We maintain a data dictionary or catalog for our key datasets.",
+      "We document our operational procedures, runbooks, and on-call responsibilities in a centralized location.",
+      "Our documentation is created on an ad-hoc basis and is often incomplete or out of date."
+    ]
+  },
+  {
+    "category": "Test and validate",
+    "question": "How do you define success metrics when you test and evaluate your AI applications?",
+    "description": "Defining clear success metrics that align with business outcomes is crucial for knowing if an AI application is truly successful.",
+    "responses": [
+      "We define and measure success based on direct business KPIs (e.g., increased conversion, reduced costs).",
+      "We conduct online A/B tests to measure the real-world impact of our AI features.",
+      "We correlate technical model metrics (e.g., accuracy) with their impact on business goals.",
+      "We regularly review and refine our success metrics as the product and business evolve.",
+      "We only use offline technical metrics like F1-score or precision to evaluate our models."
+    ]
+  },
+  {
+    "category": "Test and validate",
+    "question": "How do you validate and test the data that your workload consumes?",
+    "description": "'Garbage in, garbage out.' Validating data is critical to prevent poor model performance and unexpected behavior.",
+    "responses": [
+      "We have automated data validation steps in our pipelines that check for schema, type, and value constraints.",
+      "We test for statistical properties of the data to detect drift between training and inference data.",
+      "We have unit tests for our data transformation and feature engineering logic.",
+      "We have a defined process for handling data that fails our validation checks.",
+      "We assume the input data is correct and perform little to no automated validation."
+    ]
+  },
+  {
+    "category": "Test and validate",
+    "question": "How do you test and evaluate the AI models that you work with?",
+    "description": "Rigorous model evaluation on unseen data is necessary to ensure the model generalizes well and meets performance requirements.",
+    "responses": [
+      "We evaluate models on a held-out, representative test set that was not used during training or validation.",
+      "We analyze model performance across different data segments to check for fairness and hidden biases.",
+      "We benchmark new models against a baseline or the currently deployed model to ensure improvement.",
+      "We perform detailed error analysis to understand the specific failure modes of the model.",
+      "We only evaluate model performance on the validation set used during the training process."
+    ]
+  },
+  {
+    "category": "Test and validate",
+    "question": "How do you test the various components in your inferencing setup?",
+    "description": "The inferencing setup is more than just the model; it's an entire system that needs to be tested for correctness, performance, and resilience.",
+    "responses": [
+      "We have integration tests that verify the interaction between the API, model endpoint, and other services.",
+      "We conduct load testing to understand latency and throughput characteristics under stress.",
+      "We have end-to-end tests that simulate a complete user journey through the application.",
+      "We perform chaos engineering experiments to test the resilience of our inference service.",
+      "We only perform basic unit tests on the model's prediction function in isolation."
+    ]
+  },
+  {
+    "category": "Test and validate",
+    "question": "How does your team protect against model decay?",
+    "description": "Model decay, or drift, happens when a model's performance degrades over time as the production data changes. Proactive monitoring and management are key.",
+    "responses": [
+      "We continuously monitor for data drift and concept drift in our production environment.",
+      "We have automated alerts that trigger when model performance metrics drop below a predefined threshold.",
+      "We have a defined, semi-automated, or fully-automated process for retraining and deploying models.",
+      "We periodically evaluate the live model against a baseline using freshly collected data.",
+      "We wait for users to report poor results before we consider retraining or updating a model."
+    ]
+  },
+  {
+    "category": "Implement Responsible AI",
+    "question": "What steps do you take to develop and enforce governance policies around Responsible AI?",
+    "description": "Establishing clear governance is the foundation of Responsible AI, ensuring that ethical principles are consistently applied across the organization.",
+    "responses": [
+      "We have a formal Responsible AI governance framework with a dedicated committee or board.",
+      "We have established clear principles and policies for fairness, transparency, and accountability.",
+      "We conduct regular audits and AI impact assessments for our systems.",
+      "We provide mandatory Responsible AI training for all development and product staff.",
+      "We do not have formal governance policies or a framework for Responsible AI."
+    ]
+  },
+  {
+    "category": "Implement Responsible AI",
+    "question": "How does your organization ensure a safe user experience in AI workloads?",
+    "description": "Protecting users from harmful, biased, or inappropriate content generated by AI is a critical responsibility.",
+    "responses": [
+      "We use content safety filters to detect and block harmful or inappropriate inputs and outputs.",
+      "We conduct rigorous red teaming and adversarial testing to identify potential safety vulnerabilities.",
+      "We provide users with clear mechanisms to report harmful content and provide feedback.",
+      "We are transparent with users about the system's capabilities, limitations, and use of AI.",
+      "We do not have specific measures in place for AI user safety beyond basic input sanitation."
+    ]
+  },
+  {
+    "category": "Implement Responsible AI",
+    "question": "What content safety measures do you implement?",
+    "description": "This question drills down into the specific technical implementations for ensuring content safety.",
+    "responses": [
+      "We use multi-category safety classifiers (e.g., for hate speech, violence) on both prompts and responses.",
+      "We implement technical defenses like prompt shielding to protect against jailbreaking attempts.",
+      "We ground our model's responses in verified, factual data sources to reduce hallucinations.",
+      "We maintain configurable safety thresholds that can be adjusted based on context and risk.",
+      "We rely entirely on the default, non-configurable safety features of the base model we use."
+    ]
+  },
+  {
+    "category": "Implement Responsible AI",
+    "question": "How do you ensure that you ethically handle user details and data in your AI workload?",
+    "description": "AI systems often use sensitive data, making ethical data handling, privacy, and consent paramount.",
+    "responses": [
+      "We follow privacy-by-design principles, minimizing data collection to only what is necessary.",
+      "We use techniques like data anonymization, pseudonymization, or differential privacy.",
+      "We are transparent with users about data collection and usage, and we obtain explicit consent.",
+      "We ensure our data handling practices comply with all relevant data protection regulations (e.g., GDPR).",
+      "We use all available user data without specific anonymization or minimization policies."
+    ]
+  },
+  {
+    "category": "Create personas",
+    "question": "How do you categorize and staff the various roles and responsibilities in relation to AI workloads?",
+    "description": "Defining clear roles ensures that all aspects of the AI lifecycle, from data engineering to model deployment and governance, are owned and managed effectively.",
+    "responses": [
+      "We have clearly defined and staffed roles such as Data Scientist, ML Engineer, and Data Engineer.",
+      "We use a RACI (Responsible, Accountable, Consulted, Informed) matrix for our key AI initiatives.",
+      "We have organized into cross-functional teams or squads dedicated to specific AI products.",
+      "We have a centralized AI Center of Excellence (CoE) to provide guidance and best practices.",
+      "We do not have specialized AI/ML roles; our generalist software engineers handle all tasks."
+    ]
+  }
+]
