@@ -1,0 +1,305 @@
+{
+  "assessmentTitle": "Cloud-Agnostic GenAIOps Maturity Assessment",
+  "categories": [
+    {
+      "category": "Model Curation & Management",
+      "questions": [
+        {
+          "question": "How do you choose the LLMs for your business needs?",
+          "description": "This assesses the strategic approach to selecting foundation models, balancing cost, performance, and specific capabilities against business requirements.",
+          "responses": [
+            { "text": "We use the most popular or easily accessible model without a formal evaluation.", "score": 1 },
+            { "text": "We choose models based on informal recommendations or high-level feature lists.", "score": 2 },
+            { "text": "We conduct basic performance tests on a few models for a given use case.", "score": 3 },
+            { "text": "We have a formal evaluation process that benchmarks multiple models (open-source and proprietary) against a standardized set of metrics (e.g., accuracy, latency, cost).", "score": 4 },
+            { "text": "We maintain a curated portfolio of approved models for different domains, with a strategic framework for build (fine-tune) vs. buy decisions based on ongoing benchmarking.", "score": 5 }
+          ]
+        },
+        {
+          "question": "What is your strategy for fine-tuning models versus using them out-of-the-box?",
+          "description": "This evaluates the maturity of your approach to model specialization, including when and how to invest in fine-tuning for specific tasks.",
+          "responses": [
+            { "text": "We do not fine-tune models; we only use them as-is.", "score": 1 },
+            { "text": "We have experimented with fine-tuning but have no clear strategy on when to apply it.", "score": 2 },
+            { "text": "We fine-tune models when out-of-the-box performance is clearly insufficient.", "score": 3 },
+            { "text": "We have a defined strategy with clear criteria (e.g., data availability, performance lift) for deciding when to fine-tune a model.", "score": 4 },
+            { "text": "We have an end-to-end MLOps process for continuous evaluation and automated fine-tuning of models when performance drift is detected or new data is available.", "score": 5 }
+          ]
+        },
+        {
+          "question": "How do you manage the lifecycle and versioning of the LLMs used by your applications?",
+          "description": "This assesses the governance and control over which model versions are in use, ensuring reproducibility, traceability, and controlled updates.",
+          "responses": [
+            { "text": "We don't manage versions; applications call the 'latest' model endpoint directly.", "score": 1 },
+            { "text": "Model versions are manually tracked in documentation or code comments.", "score": 2 },
+            { "text": "We pin applications to specific model versions in the application code.", "score": 3 },
+            { "text": "We use a central model registry to version, track, and manage the lifecycle (e.g., staging, production, deprecated) of our models.", "score": 4 },
+            { "text": "Our model registry is fully integrated with our CI/CD system, allowing for automated, policy-driven promotion of models and seamless updates to applications.", "score": 5 }
+          ]
+        },
+        {
+          "question": "What is your process for evaluating and benchmarking different LLMs?",
+          "description": "This evaluates the rigor of your testing process to ensure that model selection is based on empirical evidence and relevant metrics.",
+          "responses": [
+            { "text": "We rely on public benchmarks and marketing materials.", "score": 1 },
+            { "text": "We perform ad-hoc, manual testing on a few examples.", "score": 2 },
+            { "text": "We have a standardized 'golden dataset' for a specific use case that we use for evaluation.", "score": 3 },
+            { "text": "We have a formal benchmarking framework that automatically evaluates models on multiple datasets and across various metrics (e.g., quality, toxicity, cost, latency).", "score": 4 },
+            { "text": "Our benchmarking framework is continuous, automatically evaluating new and existing models against production traffic samples and domain-specific datasets to inform our model portfolio.", "score": 5 }
+          ]
+        },
+        {
+          "question": "How do you manage access control and credentials for different foundation models across your teams?",
+          "description": "This assesses the security posture around your AI services, ensuring that API keys and access are managed securely and efficiently.",
+          "responses": [
+            { "text": "API keys are shared freely among team members.", "score": 1 },
+            { "text": "API keys are stored in code or shared documents.", "score": 2 },
+            { "text": "We use environment variables or a basic secret store to manage keys.", "score": 3 },
+            { "text": "We use a centralized, secure secrets management service with role-based access control (RBAC).", "score": 4 },
+            { "text": "Access is managed via a central gateway that uses short-lived, dynamically-issued credentials, providing fine-grained access control and full auditability.", "score": 5 }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Prompt Engineering & Context Management",
+      "questions": [
+        {
+          "question": "What is your approach to prompt engineering in LLM applications?",
+          "description": "This assesses the sophistication of your prompt design process, from simple instructions to advanced, structured techniques.",
+          "responses": [
+            { "text": "We pass user input directly to the LLM with minimal formatting.", "score": 1 },
+            { "text": "Prompts are created ad-hoc by individual developers as needed.", "score": 2 },
+            { "text": "We use standardized templates for prompts and employ basic techniques like zero-shot or few-shot learning.", "score": 3 },
+            { "text": "We have a dedicated prompt engineering process using advanced techniques like Chain-of-Thought or ReAct, and we systematically test and evaluate prompt performance.", "score": 4 },
+            { "text": "We have a programmatic approach to prompt optimization, using meta-prompts or other AI techniques to automatically generate and refine prompts for optimal performance.", "score": 5 }
+          ]
+        },
+        {
+          "question": "How do you incorporate data relevance and contextualization in your LLM responses?",
+          "description": "This evaluates your use of techniques like Retrieval-Augmented Generation (RAG) to ground LLM responses in specific, timely, and proprietary data.",
+          "responses": [
+            { "text": "We do not incorporate external data; the LLM uses only its training data.", "score": 1 },
+            { "text": "We manually copy and paste relevant information into the prompt.", "score": 2 },
+            { "text": "We have built a basic RAG prototype that retrieves data from a single source.", "score": 3 },
+            { "text": "We have a robust RAG architecture with a managed vector database that is kept in sync with our key data sources.", "score": 4 },
+            { "text": "Our RAG system is highly optimized, using advanced chunking, re-ranking, and data refresh strategies, and is integrated with our data governance framework.", "score": 5 }
+          ]
+        },
+        {
+          "question": "How do you manage, version, and reuse prompts?",
+          "description": "This assesses your governance over prompts, treating them as critical assets that require management, versioning, and quality control.",
+          "responses": [
+            { "text": "Prompts are hardcoded directly in the application source code.", "score": 1 },
+            { "text": "Prompts are stored in separate text files or configuration files within the application's repository.", "score": 2 },
+            { "text": "We have a shared document or wiki where teams store and share useful prompts.", "score": 3 },
+            { "text": "We use a centralized prompt registry or library that allows for versioning, ownership, and reuse of prompts across multiple applications.", "score": 4 },
+            { "text": "Our prompt registry is integrated with our CI/CD pipeline, allowing for automated testing and safe deployment of prompt updates, completely decoupled from application code changes.", "score": 5 }
+          ]
+        },
+        {
+          "question": "How do you manage the data sources (the 'corpus') for Retrieval-Augmented Generation (RAG)?",
+          "description": "This assesses the operational maturity of the data pipeline that feeds your RAG system, which is critical for context quality.",
+          "responses": [
+            { "text": "We perform a one-time, manual upload of a few documents.", "score": 1 },
+            { "text": "We have manual processes to periodically update the data source.", "score": 2 },
+            { "text": "We have automated pipelines to ingest and vectorize data from a few key sources.", "score": 3 },
+            { "text": "Our data ingestion pipelines are robust, scalable, and monitorable, with defined strategies for chunking and vectorization.", "score": 4 },
+            { "text": "We have a comprehensive data management strategy for our RAG corpus, including automated data quality checks, incremental updates, and lifecycle management (e.g., retiring old data).", "score": 5 }
+          ]
+        },
+        {
+          "question": "What is your strategy for handling conversations and maintaining context over multiple turns?",
+          "description": "This evaluates your approach to session management, which is key for building coherent and useful conversational AI applications.",
+          "responses": [
+            { "text": "Each turn is treated as an independent, stateless request.", "score": 1 },
+            { "text": "We send the entire chat history back to the LLM with every request.", "score": 2 },
+            { "text": "We use basic techniques like truncating the history to fit within the context window.", "score": 3 },
+            { "text": "We use sophisticated context management strategies, such as creating summaries of earlier parts of the conversation to pass to the LLM.", "score": 4 },
+            { "text": "We have a dedicated context management service that intelligently selects and summarizes relevant information from the conversation history and external knowledge sources.", "score": 5 }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Deployment & Infrastructure (CI/CD for GenAI)",
+      "questions": [
+        {
+          "question": "How do you manage the deployment of LLM applications?",
+          "description": "This assesses the maturity of your software delivery process for applications that have both traditional code and AI-specific components like prompts and models.",
+          "responses": [
+            { "text": "Deployments are fully manual, involving copying files to a server.", "score": 1 },
+            { "text": "We have automated scripts for deploying the application code, but AI components are updated manually.", "score": 2 },
+            { "text": "We have a CI/CD pipeline for the application code, and AI component changes trigger a new deployment.", "score": 3 },
+            { "text": "We have a unified CI/CD pipeline that manages the deployment of application code, prompt changes, and model configurations as a single, cohesive release.", "score": 4 },
+            { "text": "Our advanced CI/CD pipeline allows for independent, decoupled deployments of the application, prompts, and RAG data, using canary or blue/green strategies for all components.", "score": 5 }
+          ]
+        },
+        {
+          "question": "What is your testing strategy for GenAI applications before deployment?",
+          "description": "This evaluates the rigor of your quality assurance process, which must be adapted to handle the non-deterministic nature of LLMs.",
+          "responses": [
+            { "text": "We do not have a formal testing process; we test directly in production.", "score": 1 },
+            { "text": "We perform informal, manual 'smoke tests' by trying a few different inputs.", "score": 2 },
+            { "text": "We have a set of unit tests for our application code and a 'golden dataset' of prompts and expected responses to check for regressions.", "score": 3 },
+            { "text": "Our testing suite includes automated evaluation of model outputs for quality, safety, and bias, in addition to traditional code and performance tests.", "score": 4 },
+            { "text": "Our CI/CD pipeline includes a comprehensive, automated testing phase that compares the performance of a new version against the current production version (A/B testing in staging) before promotion.", "score": 5 }
+          ]
+        },
+        {
+          "question": "How do you manage the infrastructure for hosting your GenAI applications and services?",
+          "description": "This assesses your approach to infrastructure management, focusing on scalability, cost-effectiveness, and operational efficiency.",
+          "responses": [
+            { "text": "We use a single, manually-configured virtual machine.", "score": 1 },
+            { "text": "We use multiple VMs but manage them manually.", "score": 2 },
+            { "text": "We use containerization (e.g., Docker) and an orchestrator (e.g., Kubernetes) for our application components.", "score": 3 },
+            { "text": "We primarily use serverless compute (e.g., Functions-as-a-Service) for our application logic to ensure scalability and reduce operational overhead.", "score": 4 },
+            { "text": "We use a hybrid infrastructure approach, leveraging Infrastructure as Code (IaC) to deploy the optimal compute (serverless, containers, GPUs) for each specific component of the GenAIOps stack.", "score": 5 }
+          ]
+        },
+        {
+          "question": "How do you handle dependencies between application code, prompts, and models?",
+          "description": "This evaluates how you manage the complex dependency graph in a GenAI application to ensure that all components are compatible.",
+          "responses": [
+            { "text": "We don't manage dependencies; we assume everything is compatible.", "score": 1 },
+            { "text": "Dependencies are documented informally.", "score": 2 },
+            { "text": "We manage dependencies at the application level, bundling a specific prompt version with a specific application version.", "score": 3 },
+            { "text": "We use a central metadata store or registry that tracks the dependencies between application versions, prompt versions, and model versions.", "score": 4 },
+            { "text": "Our deployment system automatically resolves dependencies and prevents the deployment of incompatible components, ensuring system-wide consistency.", "score": 5 }
+          ]
+        },
+        {
+          "question": "What is your strategy for deploying changes to the RAG data corpus?",
+          "description": "This assesses how you manage updates to the knowledge base of your RAG system, which is a critical part of the application's functionality.",
+          "responses": [
+            { "text": "We manually overwrite the entire data corpus for every update.", "score": 1 },
+            { "text": "We have scripts to update the corpus, but it requires application downtime.", "score": 2 },
+            { "text": "We can update the corpus without downtime, but it's a monolithic update process.", "score": 3 },
+            { "text": "Our data pipelines support incremental updates to the corpus, and we use versioning to allow for instant rollbacks.", "score": 4 },
+            { "text": "We use a blue/green deployment strategy for our vector database, allowing us to test a new version of the corpus with a subset of traffic before full rollout.", "score": 5 }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Performance Monitoring & Evaluation",
+      "questions": [
+        {
+          "question": "How do you evaluate the performance of your LLM applications?",
+          "description": "This assesses how you measure the quality and effectiveness of your application, moving beyond simple operational metrics to user-facing quality.",
+          "responses": [
+            { "text": "We don't formally evaluate performance; we rely on the absence of user complaints.", "score": 1 },
+            { "text": "We perform periodic, manual reviews of application outputs.", "score": 2 },
+            { "text": "We track basic metrics like user engagement or thumbs up/down ratings.", "score": 3 },
+            { "text": "We use a combination of automated LLM-based evaluation (LLM-as-a-judge) and human review to score outputs against defined quality criteria (e.g., helpfulness, accuracy).", "score": 4 },
+            { "text": "We have a real-time evaluation pipeline that continuously samples production traffic, performs automated evaluations, and routes ambiguous cases to a human review queue, feeding a continuous improvement loop.", "score": 5 }
+          ]
+        },
+        {
+          "question": "What strategies do you use for continuous monitoring of LLM applications?",
+          "description": "This assesses your observability stack, focusing on the unique challenges of monitoring GenAI, such as tracking token usage and response quality.",
+          "responses": [
+            { "text": "We do not have monitoring in place.", "score": 1 },
+            { "text": "We monitor basic infrastructure metrics like CPU and memory usage.", "score": 2 },
+            { "text": "We track operational metrics like latency, error rates, and cost per call.", "score": 3 },
+            { "text": "We have a dedicated observability solution that tracks LLM-specific metrics, such as prompt and completion token counts, time-to-first-token, and tool usage.", "score": 4 },
+            { "text": "Our monitoring is comprehensive, correlating operational metrics, cost data, and quality scores in a single dashboard, providing a holistic view of application health and enabling automated anomaly detection.", "score": 5 }
+          ]
+        },
+        {
+          "question": "How do you monitor for and mitigate 'hallucinations' or factual inaccuracies?",
+          "description": "This evaluates your specific strategies for tackling one of the biggest challenges with LLMs: ensuring the generated content is factually correct.",
+          "responses": [
+            { "text": "We do not have a strategy for this; we accept it as a limitation of the technology.", "score": 1 },
+            { "text": "We add a disclaimer to the user interface warning that content may be inaccurate.", "score": 2 },
+            { "text": "We rely on prompt engineering techniques to encourage the model to be more factual.", "score": 3 },
+            { "text": "We use a robust RAG system to ground the model's responses in factual data and implement automated checks to verify claims against the source data.", "score": 4 },
+            { "text": "In addition to a strong RAG system, we have a real-time monitoring and feedback loop where users and human reviewers can flag inaccuracies, which are used to automatically refine the knowledge base or prompts.", "score": 5 }
+          ]
+        },
+        {
+          "question": "How do you monitor and govern the costs associated with your GenAI applications?",
+          "description": "This assesses your FinOps maturity for GenAI, which is critical given the potentially high and variable costs of token-based pricing models.",
+          "responses": [
+            { "text": "We don't monitor costs until we receive the monthly bill.", "score": 1 },
+            { "text": "We have a high-level view of costs but cannot attribute them to specific applications or users.", "score": 2 },
+            { "text": "We have dashboards that track overall token consumption and estimated costs.", "score": 3 },
+            { "text": "We have a detailed cost monitoring system that provides granular, real-time cost attribution, and we have implemented budgets and alerts.", "score": 4 },
+            { "text": "We have a comprehensive FinOps practice for GenAI, including automated cost controls, dynamic model routing to optimize for cost/performance, and showback/chargeback to business units.", "score": 5 }
+          ]
+        },
+        {
+          "question": "How do you capture user feedback on the quality of responses?",
+          "description": "This evaluates the mechanisms you have in place to collect direct feedback from end-users, which is an invaluable source for evaluation and improvement.",
+          "responses": [
+            { "text": "We do not have a mechanism for capturing user feedback.", "score": 1 },
+            { "text": "We rely on users to contact customer support if they have an issue.", "score": 2 },
+            { "text": "We have a simple thumbs up/down button next to each response.", "score": 3 },
+            { "text": "We have a multi-faceted feedback system that includes ratings, explicit correction/editing capabilities, and categories for feedback (e.g., 'inaccurate', 'unsafe').", "score": 4 },
+            { "text": "Our feedback system is fully integrated into our MLOps loop, where negative feedback can automatically trigger a human review process and the creation of new evaluation datasets.", "score": 5 }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Security, Governance & Content Safety",
+      "questions": [
+        {
+          "question": "How do you ensure content safety in your LLM applications?",
+          "description": "This assesses the guardrails you have in place to prevent the generation of harmful, inappropriate, or toxic content.",
+          "responses": [
+            { "text": "We rely entirely on the safety features built into the foundation model.", "score": 1 },
+            { "text": "We have a simple keyword-based blocklist for outputs.", "score": 2 },
+            { "text": "We use a separate content moderation API to check the LLM's output for safety issues.", "score": 3 },
+            { "text": "We have a multi-layered approach, using moderation services on both the user's input and the model's output, with configurable safety categories.", "score": 4 },
+            { "text": "We have a comprehensive, real-time safety system with automated content moderation, an immediate human escalation path for sensitive issues, and a continuous feedback loop to update our safety policies.", "score": 5 }
+          ]
+        },
+        {
+          "question": "What is your strategy for detecting and preventing prompt injection attacks?",
+          "description": "This evaluates your security posture against a common vulnerability in LLM applications where users try to hijack the model's original instructions.",
+          "responses": [
+            { "text": "We are not aware of prompt injection and have no defenses.", "score": 1 },
+            { "text": "We have heard of it but assume our model is not vulnerable.", "score": 2 },
+            { "text": "We try to mitigate it through prompt engineering, such as adding instructions like 'ignore previous instructions'.", "score": 3 },
+            { "text": "We have implemented specific technical defenses, such as input filtering, instruction detection, and separating user input from the core prompt.", "score": 4 },
+            { "text": "We have a multi-layered defense strategy, including input sanitization, a dedicated firewall for LLMs that detects and blocks potential attacks, and continuous monitoring for anomalous behavior.", "score": 5 }
+          ]
+        },
+        {
+          "question": "How do you manage and audit the data (prompts and responses) flowing through your LLM applications for sensitive information?",
+          "description": "This assesses your data governance and privacy practices, ensuring that Personally Identifiable Information (PII) or other sensitive data is not being leaked or mishandled.",
+          "responses": [
+            { "text": "We do not log or audit any of the data.", "score": 1 },
+            { "text": "We log everything but do not have a process for reviewing it for sensitive data.", "score": 2 },
+            { "text": "We have a process to manually review logs for sensitive data.", "score": 3 },
+            { "text": "We use automated tools to scan and redact PII and other sensitive information from our logs and datasets in near real-time.", "score": 4 },
+            { "text": "We have a comprehensive data loss prevention (DLP) strategy in place, with automated redaction at the edge before data is ever sent to the LLM, combined with strict data retention policies and regular audits.", "score": 5 }
+          ]
+        },
+        {
+          "question": "How do you ensure your application's use of AI is compliant with relevant industry regulations and data sovereignty laws?",
+          "description": "This evaluates your legal and compliance posture, which is critical for operating in regulated industries or specific geographic regions.",
+          "responses": [
+            { "text": "We are not aware of any specific regulations that apply.", "score": 1 },
+            { "text": "We assume our cloud provider's compliance covers our needs.", "score": 2 },
+            { "text": "We conduct a manual review of our application against known regulations.", "score": 3 },
+            { "text": "We have a formal compliance framework and select model providers and hosting regions that meet our specific regulatory and data sovereignty requirements.", "score": 4 },
+            { "text": "Our compliance posture is automated, with policy-as-code ensuring that only compliant models and services can be used, and continuous auditing to provide proof of compliance.", "score": 5 }
+          ]
+        },
+        {
+          "question": "What is your process for reviewing and addressing responsible AI (RAI) issues like bias, fairness, and transparency?",
+          "description": "This assesses your overarching governance framework for ensuring that your AI applications are developed and operated responsibly.",
+          "responses": [
+            { "text": "We do not have a process for reviewing RAI issues.", "score": 1 },
+            { "text": "RAI issues are discussed informally if they are raised by an employee.", "score": 2 },
+            { "text": "We have a checklist for responsible AI that is reviewed before a project launch.", "score": 3 },
+            { "text": "We have a formal governance body or ethics committee that conducts mandatory RAI reviews at key stages of the application lifecycle.", "score": 4 },
+            { "text": "Responsible AI principles are deeply integrated into our entire GenAIOps lifecycle, with automated tools for bias detection, explainability, and continuous monitoring, all overseen by a dedicated governance team.", "score": 5 }
+          ]
+        }
+      ]
+    }
+  ]
+}
