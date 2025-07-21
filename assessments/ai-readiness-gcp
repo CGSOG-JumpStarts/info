@@ -1,0 +1,1274 @@
+[
+  {
+    "category": "Cloud & AI Readiness",
+    "question": "To what extent is your organization familiar with AI and Machine Learning concepts?",
+    "description": "Assesses the baseline knowledge of AI/ML concepts and terminology across the organization, which is fundamental for successful adoption on Google Cloud.",
+    "responses": [
+      "Very limited familiarity; AI is a new and unknown concept for most.",
+      "Some pockets of familiarity exist, but it's not widespread.",
+      "A moderate level of familiarity; key stakeholders understand the basics.",
+      "Good familiarity; most teams have a working knowledge of AI/ML concepts.",
+      "Excellent familiarity; AI/ML is a well-understood topic across the organization."
+    ]
+  },
+  {
+    "category": "Cloud & AI Readiness",
+    "question": "To what extent is your organization familiar with the potential applications of AI within your industry?",
+    "description": "Gauges the organization's awareness of industry-specific AI use cases, which is crucial for identifying strategic opportunities to leverage with Google Cloud's AI services.",
+    "responses": [
+      "Very limited awareness of industry-specific AI applications.",
+      "Some awareness, but mostly based on general news rather than specific analysis.",
+      "Moderate awareness of common AI use cases in our sector.",
+      "Good awareness, with specific potential applications identified for our business.",
+      "Excellent awareness; we actively track and analyze competitor and industry AI applications."
+    ]
+  },
+  {
+    "category": "Cloud & AI Readiness",
+    "question": "How well does your leadership understand the value of AI?",
+    "description": "Evaluates leadership's comprehension of AI's strategic value, which is critical for securing sponsorship and resources for Google Cloud projects.",
+    "responses": [
+      "Poorly; leadership sees AI as a research project with unclear business value.",
+      "Slightly; there is some recognition of potential but no deep understanding.",
+      "Moderately; leadership understands the potential value but is hesitant about investment.",
+      "Well; leadership actively discusses AI's strategic value and supports exploration.",
+      "Very well; leadership is a champion for AI and clearly articulates its value to the business."
+    ]
+  },
+  {
+    "category": "Cloud & AI Readiness",
+    "question": "How committed is your leadership to AI adoption?",
+    "description": "Measures the level of executive buy-in and commitment, which directly impacts the success and momentum of AI initiatives.",
+    "responses": [
+      "Not committed; there is active resistance or indifference.",
+      "Slightly committed; they are open to small-scale experiments but not major investment.",
+      "Moderately committed; they support funded pilot projects.",
+      "Highly committed; AI is a stated priority with executive sponsorship.",
+      "Fully committed; leadership actively drives the AI strategy and allocates significant resources."
+    ]
+  },
+  {
+    "category": "Cloud & AI Readiness",
+    "question": "How clear is your organization's vision or strategy for how AI can support your business objectives?",
+    "description": "Assesses whether a clear, actionable vision exists that links AI initiatives directly to core business goals.",
+    "responses": [
+      "Very unclear; there is no defined vision or strategy.",
+      "Unclear; there are some high-level ideas but no concrete strategy.",
+      "Moderately clear; a strategy exists but it is not well-communicated or detailed.",
+      "Clear; we have a well-defined strategy that is understood by key stakeholders.",
+      "Very clear; we have a detailed, communicated, and actionable AI strategy aligned with business objectives."
+    ]
+  },
+  {
+    "category": "Cloud & AI Readiness",
+    "question": "To what extent is the necessary budget allocated for AI adoption?",
+    "description": "Evaluates if financial resources are available to support AI projects, from experimentation to full-scale production on Google Cloud.",
+    "responses": [
+      "No budget is allocated for AI initiatives.",
+      "Budget is allocated on a case-by-case basis for small experiments only.",
+      "A limited, centralized budget exists for pilot projects.",
+      "A significant budget is allocated for specific, approved AI initiatives.",
+      "A dedicated, substantial budget exists for a portfolio of AI projects and strategic adoption."
+    ]
+  },
+  {
+    "category": "Cloud & AI Readiness",
+    "question": "How compatible is your organization's IT infrastructure with Google Cloud and its AI services?",
+    "description": "Determines the technical readiness of the existing infrastructure to integrate with Google's cloud-native AI services, highlighting potential modernization needs.",
+    "responses": [
+      "Not at all compatible; significant modernization is required.",
+      "Slightly compatible; major changes would be needed to integrate.",
+      "Moderately compatible; some components are cloud-ready, but others are not.",
+      "Largely compatible; our infrastructure is designed to integrate with cloud services via APIs and hybrid connectivity.",
+      "Fully compatible; our infrastructure is cloud-native and built for deep integration with Google Cloud."
+    ]
+  },
+  {
+    "category": "Cloud & AI Readiness",
+    "question": "How effective are your systems for collecting, storing, and managing the data needed for building apps with Vertex AI?",
+    "description": "Data is the foundation of AI. This question assesses the maturity of your data infrastructure for use with Google's unified AI platform.",
+    "responses": [
+      "Not effective; our data is siloed, inaccessible, and of poor quality.",
+      "Slightly effective; we can access some data, but it requires significant manual effort.",
+      "Moderately effective; we have some centralized data storage, but governance is weak.",
+      "Effective; we have well-managed data stores and clear data collection processes.",
+      "Highly effective; we have a mature, automated data platform on Google Cloud with strong governance."
+    ]
+  },
+  {
+    "category": "Cloud & AI Readiness",
+    "question": "To what extent do you have personnel with the skills necessary to implement and manage AI solutions on Google Cloud?",
+    "description": "Evaluates the current talent pool and identifies potential skills gaps in areas like data engineering, MLOps on Vertex AI, and GKE.",
+    "responses": [
+      "Not at all; we have no internal personnel with the necessary Google Cloud AI skills.",
+      "To a small extent; we have a few individuals with some relevant skills.",
+      "To a moderate extent; we have a small team but lack depth or breadth of skills.",
+      "To a large extent; we have a capable team that can handle most AI projects on Google Cloud.",
+      "To a very large extent; we have a deep bench of highly skilled, certified Google Cloud AI professionals."
+    ]
+  },
+  {
+    "category": "Cloud & AI Readiness",
+    "question": "How open is your organization to change and to new ways of working that AI might introduce?",
+    "description": "Gauges the organizational culture's adaptability, which is a key factor in successfully integrating AI-driven process changes.",
+    "responses": [
+      "Very resistant; our culture is highly resistant to change.",
+      "Slightly open; change is slow and often met with resistance.",
+      "Moderately open; there is a willingness to change if the benefits are clear.",
+      "Open; our organization generally embraces change and new technologies.",
+      "Very open; our culture actively seeks out innovation and new ways of working."
+    ]
+  },
+  {
+    "category": "Cloud & AI Readiness",
+    "question": "To what extent are you aware of the legal and regulatory considerations for AI in your industry?",
+    "description": "Assesses the organization's understanding of the compliance landscape, which is critical for mitigating legal and reputational risks.",
+    "responses": [
+      "Not at all aware; this is a completely new area for us.",
+      "Slightly aware; we know there are considerations but don't know the specifics.",
+      "Moderately aware; we have a general understanding of the key regulations.",
+      "Largely aware; we have identified the specific regulations that apply to our use cases.",
+      "Fully aware; we have legal and compliance experts actively involved in our AI initiatives."
+    ]
+  },
+  {
+    "category": "Cloud & AI Readiness",
+    "question": "To what extent do you have a plan to manage potential risks associated with AI?",
+    "description": "Evaluates the proactiveness of the organization in identifying and planning for risks such as model bias, security vulnerabilities, and ethical issues.",
+    "responses": [
+      "No plan exists; we have not considered AI-related risks.",
+      "A minimal plan exists; we have informally discussed some potential risks.",
+      "A basic plan is in place; we have identified key risks but have no formal mitigation strategies.",
+      "A comprehensive plan is being developed; we are actively creating risk mitigation strategies.",
+      "A robust, comprehensive plan is in place with clear owners and mitigation strategies for key AI risks."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How would you rate the clarity of alignment between AI and your organization's overall business objectives?",
+    "description": "Measures how well the AI strategy is connected to core business goals, ensuring that efforts are focused on creating tangible value.",
+    "responses": [
+      "Poor; there is no clear alignment between AI initiatives and business objectives.",
+      "Fair; alignment is weak and not clearly articulated.",
+      "Average; AI is aligned with some business objectives, but not all.",
+      "Good; there is a clear and strong alignment with most key business objectives.",
+      "Excellent; our AI strategy is fully integrated with and directly drives our core business objectives."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How effectively have you identified specific use cases where AI could bring value to your organization?",
+    "description": "Evaluates the maturity of the ideation process and whether potential AI applications have been clearly defined and prioritized.",
+    "responses": [
+      "Ineffectively; we have not identified any specific use cases.",
+      "Slightly effectively; we have a long list of ideas but no prioritization or validation.",
+      "Moderately effectively; we have identified and prioritized a few promising use cases.",
+      "Effectively; we have a portfolio of well-defined, prioritized use cases with clear value propositions.",
+      "Very effectively; we have a systematic process for continuously identifying, validating, and prioritizing high-impact use cases."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How would you rate the clarity of your roadmap outlining the steps for AI implementation and integration?",
+    "description": "Assesses whether a clear, phased plan exists for executing the AI strategy, including timelines, milestones, and dependencies.",
+    "responses": [
+      "Very unclear; we have no roadmap.",
+      "Unclear; we have high-level goals but no detailed steps or timeline.",
+      "Moderately clear; we have a roadmap for the next few steps, but the long-term view is hazy.",
+      "Clear; we have a detailed roadmap with clear milestones for the next 6-12 months.",
+      "Very clear; we have a comprehensive, multi-year roadmap that is regularly updated and communicated."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How well have you defined the key performance indicators (KPIs) to measure the success of your AI initiatives?",
+    "description": "Determines if success is being measured in a meaningful way, connecting technical performance to business impact.",
+    "responses": [
+      "Not well; we have not defined any KPIs.",
+      "Slightly well; we have some technical metrics but no business KPIs.",
+      "Moderately well; we have defined KPIs for some projects, but it's not a consistent practice.",
+      "Well; we have clearly defined technical and business KPIs for all major AI initiatives.",
+      "Very well; our KPIs are integrated into business dashboards and are regularly reviewed by leadership."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How comprehensive are your plans for scaling AI across the organization?",
+    "description": "Evaluates the strategy for moving beyond initial pilot projects to widespread, enterprise-level adoption of AI.",
+    "responses": [
+      "Not comprehensive; we have no plans for scaling.",
+      "Slightly comprehensive; we have discussed scaling but have no concrete plans.",
+      "Moderately comprehensive; we have a plan to scale successful pilots to their respective departments.",
+      "Comprehensive; we have a clear strategy for enterprise-wide scaling, including technology, processes, and people.",
+      "Very comprehensive; our scaling plan is a core part of our AI strategy, with a dedicated center of excellence to support it."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How adequate are the resources (time, budget, personnel) you have allocated to achieve your AI objectives?",
+    "description": "Assesses if the allocated resources realistically match the ambition of the AI strategy.",
+    "responses": [
+      "Completely inadequate; we have no dedicated resources.",
+      "Inadequate; resources are insufficient and a major constraint.",
+      "Adequate for initial projects, but not for our long-term strategy.",
+      "Largely adequate; we are well-resourced for our current roadmap.",
+      "Fully adequate; we have secured all necessary resources to execute our strategy successfully."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How comprehensive is your plan to address potential risks and challenges related to AI adoption?",
+    "description": "Gauges the maturity of the organization's strategic risk management for AI, covering technical, ethical, and operational challenges.",
+    "responses": [
+      "Not comprehensive; we have not identified or planned for risks.",
+      "Slightly comprehensive; we are aware of risks but have no formal plan.",
+      "Moderately comprehensive; we have a plan for technical risks but not for ethical or operational ones.",
+      "Comprehensive; our strategy includes a thorough risk assessment and mitigation plan.",
+      "Very comprehensive; risk management is fully integrated into our AI governance framework and is continuously monitored."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How well does your strategy consider ethical issues related to AI, in line with Google's Responsible AI principles?",
+    "description": "Evaluates if ethical considerations like fairness, accountability, and transparency are core components of the AI strategy.",
+    "responses": [
+      "Not at all; ethical issues are not considered in our strategy.",
+      "Slightly; ethical issues are mentioned but not addressed in detail.",
+      "Moderately; we have general ethical guidelines but they are not integrated into the strategy.",
+      "Well; our strategy includes specific principles and actions to address key ethical issues.",
+      "Very well; we have a formal, proactive ethical AI framework that governs our entire strategy."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How well does your strategy consider compliance regulations related to AI in your industry?",
+    "description": "Assesses whether the AI strategy proactively incorporates legal and regulatory requirements to ensure compliance.",
+    "responses": [
+      "Not at all; compliance regulations are not considered in our strategy.",
+      "Slightly; we are aware of regulations but they are not formally part of our strategy.",
+      "Moderately; our strategy acknowledges compliance but lacks detailed implementation plans.",
+      "Well; our strategy is designed to meet current compliance regulations.",
+      "Very well; our strategy is proactive, anticipating future regulations and building compliance by design."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How much does your strategy rely on partnering with Google Cloud, consultants, or other organizations to enhance your AI capabilities?",
+    "description": "Explores the organization's approach to 'build vs. buy' and its strategy for leveraging the Google Cloud partner ecosystem.",
+    "responses": [
+      "Not at all; we plan to build everything internally without partners.",
+      "Slightly; we may partner for specific tools but not for strategic guidance.",
+      "Moderately; we rely on partners for technology platforms and some implementation support.",
+      "Heavily; we partner extensively with Google and consultants for both technology and strategy.",
+      "Our strategy is a hybrid model, clearly defining what we build internally and where we partner for acceleration."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How are you making sure that your AI strategy learns from new implementations and stays up to date with advancements from sources like Google Cloud Next and research papers?",
+    "description": "An effective AI strategy is dynamic. This question assesses the processes in place to ensure the strategy evolves with the rapidly changing AI landscape.",
+    "responses": [
+      "We have no formal process; we learn about advancements in an ad-hoc, reactive manner.",
+      "We occasionally review market trends when a new project starts.",
+      "We have individuals who follow AI news, but there's no systematic process to update our strategy.",
+      "We have a regular process to review AI advancements and discuss their impact on our strategy.",
+      "We have a dedicated, proactive process for competitive analysis, technology scanning, and integrating learnings into our evolving AI roadmap."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How well does your strategy incorporate feedback mechanisms to constantly refine and improve your AI initiatives?",
+    "description": "Gauges whether there is a structured process for learning from successes and failures to continuously improve the AI strategy.",
+    "responses": [
+      "Not at all; we have no feedback mechanisms.",
+      "Slightly; we gather informal feedback but have no process to act on it.",
+      "Moderately; we conduct project retrospectives, but learnings are not systematically fed back into the strategy.",
+      "Well; we have formal feedback loops from project teams and business stakeholders to refine the strategy.",
+      "Very well; continuous improvement is a core principle, with automated data collection and regular strategic reviews."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "To what extent does your AI strategy take into consideration the impact of AI on your organization's employees and their roles?",
+    "description": "Assesses the focus on change management and the human element of AI adoption, including reskilling and role transformation.",
+    "responses": [
+      "Not at all; the impact on employees has not been considered.",
+      "To a small extent; we are aware of the impact but have no specific plans.",
+      "To a moderate extent; our strategy includes communication plans about the impact of AI.",
+      "To a large extent; our strategy includes plans for training and reskilling employees.",
+      "To a very large extent; our strategy includes a comprehensive change management and workforce transformation plan."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How proactive is your strategy in staying on top of the latest advancements in AI technology and its potential impact on your organization?",
+    "description": "Measures whether the organization's strategic posture is reactive or proactive in adapting to the fast-paced evolution of AI.",
+    "responses": [
+      "Reactive; we only respond to new advancements after they become mainstream.",
+      "Slightly proactive; we monitor trends but are slow to adopt them.",
+      "Moderately proactive; we experiment with new technologies as they emerge.",
+      "Proactive; we actively seek out and pilot emerging AI technologies.",
+      "Very proactive; we are often early adopters and contribute to defining best practices with new technologies."
+    ]
+  },
+  {
+    "category": "AI Strategy",
+    "question": "How would you rate your organization's approach to balancing AI-driven automation with the necessity of human insight and decision-making?",
+    "description": "Evaluates the strategic approach to human-in-the-loop systems, ensuring that AI augments rather than simply replaces human expertise.",
+    "responses": [
+      "Poor; we focus solely on automation without considering the need for human oversight.",
+      "Fair; we understand the need for human insight but have no formal process for it.",
+      "Average; we have human-in-the-loop processes for some critical applications.",
+      "Good; our strategy clearly defines where automation is appropriate and where human judgment is required.",
+      "Excellent; we design our AI systems with human collaboration as a core principle, creating a synergistic relationship."
+    ]
+  },
+  {
+    "category": "Technical Foundations on Google Cloud",
+    "question": "To what extent is your current technology infrastructure equipped to support AI workloads on Google Cloud?",
+    "description": "Assesses the readiness of core infrastructure components like compute, storage, and networking for the demands of AI workloads.",
+    "responses": [
+      "Not at all equipped; significant investment is needed.",
+      "Slightly equipped; we can support small-scale experiments but not production workloads.",
+      "Moderately equipped; our infrastructure can support some AI workloads but lacks scalability.",
+      "Largely equipped; our infrastructure is modern and can support most AI workloads.",
+      "Fully equipped; our infrastructure is optimized for scalable and efficient AI workloads on Google Cloud."
+    ]
+  },
+  {
+    "category": "Technical Foundations on Google Cloud",
+    "question": "To what extent are you currently utilizing AI tools or platforms like Vertex AI?",
+    "description": "Gauges the current level of adoption and practical experience with Google's AI technologies within the organization.",
+    "responses": [
+      "Not at all; we are not using any cloud AI tools.",
+      "To a small extent; we are using a few basic AI APIs.",
+      "To a moderate extent; we have started using Vertex AI for a small number of projects.",
+      "To a large extent; Vertex AI is used by several teams for model development and deployment.",
+      "To a very large extent; Vertex AI is the core, standardized platform for AI/ML across our organization."
+    ]
+  },
+  {
+    "category": "Technical Foundations on Google Cloud",
+    "question": "How would you rate the integration of your AI technologies with your existing IT systems?",
+    "description": "Measures the seamlessness of data and process flow between new AI applications and legacy enterprise systems.",
+    "responses": [
+      "Poor; our AI technologies are completely siloed from our existing systems.",
+      "Fair; integration is manual and requires significant effort.",
+      "Average; we have some point-to-point integrations, but they are brittle.",
+      "Good; our AI technologies are well-integrated with key IT systems via APIs.",
+      "Excellent; we have a robust, enterprise-wide integration strategy that enables seamless data flow."
+    ]
+  },
+  {
+    "category": "Technical Foundations on Google Cloud",
+    "question": "To what extent do you believe your organization has the internal knowledge to select the appropriate AI technology for different use cases?",
+    "description": "Evaluates the in-house expertise to make informed technology choices, which is critical for avoiding costly mistakes.",
+    "responses": [
+      "Not at all; we have no internal knowledge for technology selection.",
+      "To a small extent; we rely entirely on vendor recommendations.",
+      "To a moderate extent; we have some knowledge but would benefit from external guidance.",
+      "To a large extent; we have a strong internal team capable of making informed technology choices.",
+      "To a very large extent; we have a formal process and expert team for evaluating and selecting AI technologies."
+    ]
+  },
+  {
+    "category": "Technical Foundations on Google Cloud",
+    "question": "How much do you agree with the statement: 'Our organization is comfortable with the process of migrating existing applications and data to Google Cloud'?",
+    "description": "Assesses the organization's experience and comfort level with cloud migration, a key step for leveraging Google Cloud services.",
+    "responses": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "category": "Technical Foundations on Google Cloud",
+    "question": "To what extent do you believe your organization has the ability to validate the results produced by AI?",
+    "description": "Evaluates the processes and skills in place to test, validate, and build trust in the outputs of AI models.",
+    "responses": [
+      "Not at all; we have no way to validate AI results and treat them as a black box.",
+      "To a small extent; validation is manual and ad-hoc.",
+      "To a moderate extent; we have processes to validate results for some applications.",
+      "To a large extent; we have systematic processes for validating AI results against business metrics.",
+      "To a very large extent; we have automated validation, error analysis, and explainability tools in place."
+    ]
+  },
+  {
+    "category": "Technical Foundations on Google Cloud",
+    "question": "To what extent have you adopted Google Cloud technologies for AI deployment and usage?",
+    "description": "Gauges the maturity of the organization's Google Cloud adoption journey specifically for AI workloads.",
+    "responses": [
+      "Not at all; all of our AI work is on-premises.",
+      "To a small extent; we use Google Cloud for data storage but not for compute.",
+      "To a moderate extent; we have deployed a few AI models on Google Cloud.",
+      "To a large extent; Google Cloud is our primary environment for AI development and deployment.",
+      "To a very large extent; we are cloud-native and leverage a wide range of managed Google Cloud AI services."
+    ]
+  },
+  {
+    "category": "Technical Foundations on Google Cloud",
+    "question": "How strong is your partnership with Google Cloud to enhance your AI capabilities?",
+    "description": "Assesses the health and strategic value of the relationship with Google's technical and account teams.",
+    "responses": [
+      "Very weak; we have no direct relationship with Google Cloud.",
+      "Weak; our relationship is purely transactional through a reseller.",
+      "Moderate; we have a good relationship with our account team but it is not strategic.",
+      "Strong; we have a strategic partnership that gives us access to expertise, support, and product roadmaps.",
+      "Very strong; Google is a deeply integrated strategic partner in our AI strategy and execution."
+    ]
+  },
+  {
+    "category": "Technical Foundations on Google Cloud",
+    "question": "How would you rate your organization's ability to develop or utilize AI models (e.g., using Gemini, fine-tuning open-source models on GKE)?",
+    "description": "Evaluates the core capability of acquiring AI models, whether through using Google's foundation models, fine-tuning, or custom development.",
+    "responses": [
+      "Poor; we have no experience in developing or utilizing foundation models.",
+      "Fair; we have used some off-the-shelf APIs but have no fine-tuning experience.",
+      "Average; we have experience fine-tuning models on platforms like Vertex AI.",
+      "Good; we have a capable team that can develop custom models for specific tasks.",
+      "Excellent; we have expertise across the spectrum, from using APIs to fine-tuning and serving large models efficiently."
+    ]
+  },
+  {
+    "category": "Technical Foundations on Google Cloud",
+    "question": "How would you rate your organization's ability to manage the MLOps lifecycle using tools like Vertex AI Pipelines?",
+    "description": "Assesses the organization's MLOps maturity on Google Cloud, critical for maintaining and improving AI applications in production.",
+    "responses": [
+      "Poor; we have no process for managing the model lifecycle.",
+      "Fair; our processes are manual and based on notebooks.",
+      "Average; we use some scripts for deployment but monitoring and retraining are manual.",
+      "Good; we use Vertex AI Pipelines to automate our model training and deployment process.",
+      "Excellent; we have a mature, end-to-end automated MLOps platform integrated with CI/CD and monitoring."
+    ]
+  },
+  {
+    "category": "Technical Foundations on Google Cloud",
+    "question": "How would you rate your organization's expertise in using API gateways like Apigee?",
+    "description": "Evaluates the proficiency with API management, which is crucial for securing, managing, and scaling access to AI services.",
+    "responses": [
+      "None; we do not use API gateways.",
+      "Beginner; we have just started to explore API gateways.",
+      "Intermediate; we use an API gateway for basic routing and authentication.",
+      "Advanced; we use Apigee for traffic management, policy enforcement, and monitoring.",
+      "Expert; Apigee is a core, expertly-managed component of our architecture."
+    ]
+  },
+  {
+    "category": "Technical Foundations on Google Cloud",
+    "question": "To what extent does your organization leverage serverless architectures like Cloud Run and Cloud Functions?",
+    "description": "Gauges the adoption of serverless computing, which is often a cost-effective and scalable way to host AI inference endpoints and processing logic.",
+    "responses": [
+      "Not at all; we only use traditional VMs.",
+      "To a small extent; we have used serverless for a few non-critical tasks.",
+      "To a moderate extent; we use serverless for some of our application backends.",
+      "To a large extent; Cloud Run or Cloud Functions are common architectural patterns in our organization.",
+      "To a very large extent; serverless is our default choice for new microservices and event-driven applications."
+    ]
+  },
+  {
+    "category": "Production Readiness & SRE Principles",
+    "question": "How mature is your organization's adoption of Site Reliability Engineering (SRE) principles?",
+    "description": "Assesses the adoption of Google's SRE philosophy, which is foundational to running reliable services.",
+    "responses": [
+      "Not mature; we are not familiar with SRE principles.",
+      "Slightly mature; we have read about SRE but have not implemented any practices.",
+      "Moderately mature; we have started to adopt some SRE practices like postmortems.",
+      "Mature; SRE principles are a key part of how we manage our production services.",
+      "Very mature; we have dedicated SRE teams, error budgets, and a culture of blameless postmortems."
+    ]
+  },
+  {
+    "category": "Production Readiness & SRE Principles",
+    "question": "Have you defined Service Level Objectives (SLOs) and Service Level Indicators (SLIs) for your critical applications?",
+    "description": "SLOs and SLIs are core SRE concepts. This assesses if you are measuring reliability in a user-centric way.",
+    "responses": [
+      "No, we do not use SLOs or SLIs.",
+      "We have some SLIs (metrics) but have not defined SLOs (targets).",
+      "We have defined SLOs for a few critical applications.",
+      "We have SLOs for most of our user-facing services.",
+      "SLOs are deeply integrated into our development and operations, and are used to manage error budgets."
+    ]
+  },
+  {
+    "category": "Production Readiness & SRE Principles",
+    "question": "How would you rate the security measures in place to protect your AI systems on Google Cloud?",
+    "description": "Evaluates the security posture, including the use of IAM, VPC Service Controls, and other Google Cloud security features.",
+    "responses": [
+      "Poor; we have no specific security measures for AI systems.",
+      "Fair; we apply standard IT security measures but nothing cloud-native.",
+      "Average; we use IAM but have not implemented advanced security like VPC Service Controls.",
+      "Good; we have robust security measures, including principle of least privilege and data encryption.",
+      "Excellent; we have a comprehensive security plan that leverages Google Cloud's advanced security features and is regularly audited."
+    ]
+  },
+  {
+    "category": "Production Readiness & SRE Principles",
+    "question": "How well do you utilize error budgets to balance innovation velocity with reliability?",
+    "description": "Error budgets are a key SRE tool. This assesses if your organization uses them to make data-driven decisions about when to release new features versus when to focus on reliability.",
+    "responses": [
+      "Not at all; we are not familiar with error budgets.",
+      "Slightly; we understand the concept but do not use them.",
+      "Moderately; we track our error budget, but it doesn't yet drive our deployment decisions.",
+      "Well; our error budget status is a key factor in our release planning meetings.",
+      "Very well; our CI/CD system can automatically slow down or halt releases if the error budget is depleted."
+    ]
+  },
+  {
+    "category": "Production Readiness & SRE Principles",
+    "question": "How well-prepared is your incident management plan (e.g., playbooks, blameless postmortems) for production applications?",
+    "description": "Assesses the maturity of incident response processes, a core tenet of SRE.",
+    "responses": [
+      "Not prepared; we have no plan for handling incidents.",
+      "Slightly prepared; we have a reactive, ad-hoc approach to fixing issues.",
+      "Moderately prepared; we have monitoring in place and conduct postmortems, but they are often focused on blame.",
+      "Well-prepared; we have monitoring, alerting, documented playbooks, and a practice of blameless postmortems.",
+      "Very well-prepared; we have a proactive, automated incident response process with on-call rotations and a culture of learning from failures."
+    ]
+  },
+  {
+    "category": "Production Readiness & SRE Principles",
+    "question": "How mature is your CI/CD process for deploying updates to Google Cloud (e.g., using Cloud Build)?",
+    "description": "Evaluates the sophistication of the deployment automation pipeline.",
+    "responses": [
+      "Not mature; our updates are manual and high-risk.",
+      "Slightly mature; we have a manual deployment process with some testing.",
+      "Moderately mature; we use Cloud Build for CI, but deployments (CD) are manual.",
+      "Mature; we have an automated CI/CD pipeline using Cloud Build and Cloud Deploy.",
+      "Very mature; we use advanced deployment strategies like canary analysis integrated into our pipeline."
+    ]
+  },
+  {
+    "category": "Production Readiness & SRE Principles",
+    "question": "What provisions have you made for scalable and reliable production deployments on Google Cloud (e.g., using GKE, managed instance groups)?",
+    "description": "Probes into the specific architectural choices made to ensure the application meets non-functional requirements for production.",
+    "responses": [
+      "None; the application is deployed to a single GCE instance.",
+      "Minimal; we use a single instance that can be manually scaled up.",
+      "Moderate; we use a load balancer across a managed instance group in a single region.",
+      "Substantial; we use auto-scaling instance groups or GKE clusters across multiple zones.",
+      "Comprehensive; we have a multi-region, fault-tolerant architecture with Global Load Balancing and automated failover."
+    ]
+  },
+  {
+    "category": "Production Readiness & SRE Principles",
+    "question": "How well-prepared is your plan to rollback updates in case of unexpected issues with new releases?",
+    "description": "A critical part of deployment safety, this question assesses the ability to quickly revert to a previous stable version.",
+    "responses": [
+      "Not prepared; we have no rollback plan.",
+      "Slightly prepared; rollback is a manual and slow process of redeploying the old version.",
+      "Moderately prepared; we have scripts to assist with rollback, but it involves downtime.",
+      "Well-prepared; we have an automated rollback capability within our Cloud Deploy pipeline.",
+      "Very well-prepared; our deployment strategy (e.g., blue-green) allows for instantaneous, zero-downtime rollbacks."
+    ]
+  },
+  {
+    "category": "Production Readiness & SRE Principles",
+    "question": "How would you rate your feedback model for your AI application's performance and accuracy?",
+    "description": "Evaluates the mechanisms in place to capture feedback on model performance, which is vital for monitoring and retraining.",
+    "responses": [
+      "Poor; we have no mechanism to collect feedback.",
+      "Fair; we rely on users to manually report issues via email or support tickets.",
+      "Average; we have a feedback button in the app but the data is not systematically analyzed.",
+      "Good; we have a structured feedback loop that captures user ratings and comments for analysis in BigQuery.",
+      "Excellent; we have an automated feedback loop that feeds directly into our Vertex AI monitoring and retraining pipelines."
+    ]
+  },
+  {
+    "category": "Production Readiness & SRE Principles",
+    "question": "How effective is your monitoring and alerting stack (e.g., using Cloud Monitoring) in promptly identifying issues?",
+    "description": "Assesses the proactiveness of the monitoring system, ensuring that problems are detected and acted upon before they impact users.",
+    "responses": [
+      "Not effective; we have no real monitoring or alerting.",
+      "Slightly effective; we have some basic metrics but no automated alerting.",
+      "Moderately effective; we have alerts for system metrics (CPU, memory) but not for SLOs or application performance.",
+      "Effective; we have clear alerting policies in Cloud Monitoring for both system metrics and our defined SLIs.",
+      "Highly effective; we have dynamic, multi-level alerting tied directly to our SLOs and error budgets, with automated notifications to our incident response system."
+    ]
+  },
+  {
+    "category": "Application Modernization & Management",
+    "question": "Do you agree with the statement that your application estate is architected for the cloud?",
+    "description": "Provides a high-level assessment of whether the existing portfolio of applications is architected in a way that is conducive to cloud-native operations.",
+    "responses": [
+      "Strongly Disagree; our applications are monolithic and tightly coupled to on-premises infrastructure.",
+      "Disagree; most of our applications would require significant re-architecting for the cloud.",
+      "Neutral; some of our applications are cloud-ready, while others are not.",
+      "Agree; most of our newer applications are designed with cloud principles like microservices.",
+      "Strongly Agree; our application estate is largely cloud-native, built on platforms like GKE or Cloud Run."
+    ]
+  },
+  {
+    "category": "Application Modernization & Management",
+    "question": "Are you able to effectively load balance and rate limit (through a solution such as Apigee) calls to any new intelligent app solution?",
+    "description": "Assesses the capability to manage traffic to AI services, which is essential for protecting backend systems, ensuring fair use, and managing costs.",
+    "responses": [
+      "No, we have no capabilities for load balancing or rate limiting.",
+      "We can do basic load balancing with Cloud Load Balancing but not advanced API management.",
+      "We can implement these, but it is a manual, infrastructure-level task.",
+      "Yes, we use Cloud Load Balancing effectively but don't have a dedicated API gateway.",
+      "Yes, we use a dedicated API Management solution like Apigee to effectively manage all API traffic."
+    ]
+  },
+  {
+    "category": "Application Modernization & Management",
+    "question": "Have you made allowances for an app tier that experiences latency due to a downstream generative AI component?",
+    "description": "Generative AI calls can be slow. This assesses whether the application architecture is designed to handle this latency gracefully (e.g., using Pub/Sub and Cloud Tasks).",
+    "responses": [
+      "No, our application makes synchronous calls and will block, leading to a poor user experience.",
+      "We are aware of the issue but have not implemented a solution.",
+      "We have increased timeouts, but the user experience is still impacted.",
+      "Yes, we have implemented asynchronous patterns like using Cloud Tasks for long-running AI calls.",
+      "Yes, our architecture is fully event-driven using Pub/Sub, providing a responsive UX while AI tasks process in the background."
+    ]
+  },
+  {
+    "category": "Application Modernization & Management",
+    "question": "How many components of your intelligent app are hosted on scalable Google Cloud platforms like GKE or Cloud Run?",
+    "description": "Evaluates the degree to which the application leverages Google Cloud's scalable, managed compute.",
+    "responses": [
+      "None; all components are hosted on a single GCE instance.",
+      "Only the AI model is hosted on a scalable platform, the rest is on VMs.",
+      "The application frontend and backend are on a scalable platform, but data sources are not.",
+      "Most components are hosted on scalable platforms like GKE or Cloud Run.",
+      "All components of the application are hosted on scalable, managed Google Cloud platforms."
+    ]
+  },
+  {
+    "category": "Application Modernization & Management",
+    "question": "What is the primary compute platform for your intelligent applications (e.g., GCE, GKE, Cloud Run, Cloud Functions)?",
+    "description": "Understanding the target compute platform is essential for designing scalable, cost-effective, and manageable AI applications on Google Cloud.",
+    "responses": [
+      "Google Compute Engine (GCE) virtual machines.",
+      "Google Kubernetes Engine (GKE) for container orchestration.",
+      "Cloud Run for serverless containers.",
+      "Cloud Functions for event-driven serverless code.",
+      "A mix of the above, chosen based on the specific needs of each microservice."
+    ]
+  },
+  {
+    "category": "Application Modernization & Management",
+    "question": "How would you rate your organization's capability to implement DevSecOps practices and tools like Security Command Center?",
+    "description": "Assesses the maturity of integrating security into the DevOps lifecycle on Google Cloud.",
+    "responses": [
+      "Poor; we have no DevOps or security automation.",
+      "Fair; we have CI/CD, but security is a separate, manual step at the end.",
+      "Average; we have started to integrate some security scanning tools into our Cloud Build pipelines.",
+      "Good; we have a solid DevSecOps practice and use Security Command Center for visibility.",
+      "Excellent; security is 'shifted left' and is an automated, integral part of the entire development lifecycle, with proactive threat detection."
+    ]
+  },
+  {
+    "category": "Application Modernization & Management",
+    "question": "What authentication methods are used for service-to-service communication (e.g., service accounts, Workload Identity)?",
+    "description": "Evaluates the security of service-to-service communication, focusing on Google Cloud-native best practices.",
+    "responses": [
+      "None; components communicate over unauthenticated channels.",
+      "Static, long-lived service account keys stored in configuration.",
+      "Standard protocols like OAuth 2.0, but with manual key management.",
+      "IAM service accounts with roles managed correctly.",
+      "Workload Identity to provide Google Cloud service accounts to Kubernetes pods, avoiding key management."
+    ]
+  },
+  {
+    "category": "Application Modernization & Management",
+    "question": "Have you evaluated utilizing a caching strategy with a service like Memorystore to improve performance?",
+    "description": "Assesses whether caching is used to reduce latency and cost, especially for repetitive AI queries.",
+    "responses": [
+      "No, we have not considered caching.",
+      "We have discussed it but have not implemented any caching.",
+      "We use some in-memory caching within application instances, but it's not distributed.",
+      "Yes, we use a managed, distributed cache like Memorystore for Redis for API responses.",
+      "Yes, we have a multi-layer caching strategy that includes Cloud CDN, Memorystore, and caching of AI model responses."
+    ]
+  },
+  {
+    "category": "Application Modernization & Management",
+    "question": "How well are the components designed to work across multiple regions or handle transient outages?",
+    "description": "Evaluates the application's resilience and high-availability design.",
+    "responses": [
+      "Not at all; the application is designed for a single zone and cannot handle outages.",
+      "Poorly; it can handle an instance restart but not a zonal or regional outage.",
+      "Moderately; components have retry logic for transient outages, but are not deployed multi-zone.",
+      "Well; the application is deployed across multiple zones within a region for high availability.",
+      "Very well; the application is deployed active-active across multiple regions using Global Load Balancing."
+    ]
+  },
+  {
+    "category": "Application Modernization & Management",
+    "question": "How well are the components designed to change configuration values and or rotate secrets using Secret Manager without redeploying?",
+    "description": "Assesses the maturity of configuration and secrets management, key for security and operational agility.",
+    "responses": [
+      "Not at all; configuration and secrets are hardcoded in the application.",
+      "Poorly; they are in configuration files that require a redeployment to change.",
+      "Moderately; we use environment variables, which still require a service restart.",
+      "Well; we use a centralized configuration service for settings and Secret Manager for secrets.",
+      "Very well; we use Secret Manager with client-side libraries that automatically fetch the latest version, with automated rotation policies."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "To what extent do you have processes in place to collect data required for your AI initiatives?",
+    "description": "Evaluates the maturity and automation of data ingestion pipelines.",
+    "responses": [
+      "Not at all; data collection is a manual, ad-hoc process.",
+      "To a small extent; we have some scripts for data collection, but they are not robust.",
+      "To a moderate extent; we have reliable processes for collecting data from some key sources.",
+      "To a large extent; we have automated data collection pipelines for most of our required data.",
+      "To a very large extent; we have a real-time, streaming data collection platform using services like Pub/Sub and Dataflow."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "How well are your systems equipped to securely store data on Google Cloud Storage (GCS) and analyze it with BigQuery?",
+    "description": "Assesses the suitability of the data storage and analytics solution for AI workloads.",
+    "responses": [
+      "Not well; data is stored on local file systems or in traditional databases.",
+      "Slightly well; we use GCS as a data dump, but have no analytics platform.",
+      "Moderately well; we use BigQuery, but security and access control are basic.",
+      "Well; we have a well-organized data lake on GCS and use BigQuery for analytics with good security measures.",
+      "Very well; we have a modern data platform built around BigQuery and GCS, with robust security, governance, and scalability."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "How would you rate your methods to ensure the quality and accuracy of your data?",
+    "description": "Gauges the maturity of data quality management processes, which are critical for building trustworthy AI models.",
+    "responses": [
+      "Poor; we do not have any data quality checks.",
+      "Fair; data quality is checked manually and sporadically.",
+      "Average; we have some automated data quality checks, but they are not comprehensive.",
+      "Good; we have a data quality framework with automated checks integrated into our data pipelines (e.g., using Dataplex).",
+      "Excellent; we have a proactive data quality program with automated monitoring, alerting, and remediation."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "How effective is your data governance framework, potentially using tools like Dataplex?",
+    "description": "Evaluates the maturity of the policies and controls that govern the organization's data assets on Google Cloud.",
+    "responses": [
+      "Not effective; we have no data governance framework.",
+      "Slightly effective; we have some informal policies, but they are not enforced.",
+      "Moderately effective; we have a documented framework, but implementation is inconsistent.",
+      "Effective; we have a well-defined data governance framework with clear roles, policies, and enforcement.",
+      "Highly effective; our data governance is automated through tools like Dataplex for discovery, lineage, and quality, making it a core part of our data culture."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "How well-integrated are your data sources, allowing for easy access and flow of data across different systems?",
+    "description": "Assesses the degree to which data silos have been broken down, enabling a holistic view for AI applications.",
+    "responses": [
+      "Not well-integrated; our data is heavily siloed and difficult to access.",
+      "Slightly integrated; accessing data from different systems requires custom, point-to-point integrations.",
+      "Moderately integrated; we have a central data warehouse, but it's not easy to combine data from different sources.",
+      "Well-integrated; we use BigQuery as a unified platform to query data across multiple sources.",
+      "Very well-integrated; we have a real-time, event-driven architecture that ensures seamless data flow across all systems."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "How effective are your methods to ensure compliance with data privacy regulations in your industry and region?",
+    "description": "Evaluates the practical implementation of data privacy controls and compliance with regulations like GDPR, CCPA, etc.",
+    "responses": [
+      "Not effective; we are not confident in our compliance.",
+      "Slightly effective; compliance is a manual, yearly audit process.",
+      "Moderately effective; we have some tools and processes, but they are not comprehensive.",
+      "Effective; we have strong processes and controls in place to ensure compliance.",
+      "Highly effective; compliance is built into our data platform by design, with automated checks and reporting."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "How would you rate the measures in place to protect your data from potential security threats?",
+    "description": "Focuses on the data security posture, including encryption, access control, and threat detection.",
+    "responses": [
+      "Poor; our data is not well-protected.",
+      "Fair; we have basic security measures like firewalls, but no data-specific protection.",
+      "Average; we have access controls in place, but data is not encrypted at rest.",
+      "Good; we have robust measures including encryption at rest and in transit, and role-based access control.",
+      "Excellent; we have a comprehensive data security program with advanced threat detection and automated response."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "To what extent do you have the necessary tools and skills to analyze and derive insights from your data (e.g., using BigQuery and Looker)?",
+    "description": "Gauges the organization's analytical capabilities, which are a precursor to more advanced AI work.",
+    "responses": [
+      "Not at all; we lack both the tools and the skills.",
+      "To a small extent; we use spreadsheets for data analysis.",
+      "To a moderate extent; we use BigQuery for ad-hoc queries but lack a BI tool.",
+      "To a large extent; we use BigQuery and Looker and have a skilled team of data analysts.",
+      "To a very large extent; we have a culture of data-driven decision-making with widespread access to self-service analytics via Looker."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "How equipped are you to handle real-time data processing for AI applications using services like Pub/Sub and Dataflow?",
+    "description": "Assesses the capability to work with streaming data, which is essential for many modern AI use cases.",
+    "responses": [
+      "Not equipped; we can only handle batch processing.",
+      "Slightly equipped; we have some experience with Pub/Sub but no stream processing.",
+      "Moderately equipped; we have a Dataflow pipeline but limited expertise and use.",
+      "Well-equipped; we have the platform and skills to build and manage real-time data processing applications.",
+      "Very well-equipped; real-time data processing is a core competency and a central part of our data architecture."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "To what extent are your data management processes automated?",
+    "description": "Evaluates the level of automation in data pipelines, quality checks, and governance, which is key to scaling data operations.",
+    "responses": [
+      "Not at all; our processes are entirely manual.",
+      "To a small extent; we have some scripts, but they require manual execution.",
+      "To a moderate extent; our data ingestion is automated, but quality and governance are manual.",
+      "To a large extent; most of our data management processes are automated.",
+      "To a very large extent; we have an end-to-end, fully automated DataOps platform."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "How effectively does your organization handle data version control in AI development?",
+    "description": "Data versioning is as important as code versioning for reproducibility in AI. This question assesses the maturity of this practice.",
+    "responses": [
+      "Not effectively; we do not version our data.",
+      "Slightly effectively; we use manual methods like copying GCS buckets with date stamps.",
+      "Moderately effectively; we use a Git-based solution like DVC for some projects.",
+      "Effectively; data versioning is a standard practice for all our AI projects.",
+      "Very effectively; data versioning is integrated and automated within our Vertex AI MLOps platform."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "How comprehensive is your data backup and disaster recovery plan?",
+    "description": "Evaluates the plan to protect and recover data assets in the event of a disaster.",
+    "responses": [
+      "Not comprehensive; we do not have a data backup plan.",
+      "Slightly comprehensive; we have backups, but no documented or tested recovery plan.",
+      "Moderately comprehensive; we have a plan for our primary databases but not for our data lake.",
+      "Comprehensive; we have a well-documented and regularly tested backup and recovery plan for all critical data.",
+      "Very comprehensive; we have an automated, multi-region backup and disaster recovery strategy."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "To what extent do you manage the lifecycle of your data, from creation to deletion?",
+    "description": "Assesses the practice of data lifecycle management, which is important for compliance, cost management, and reducing data clutter.",
+    "responses": [
+      "Not at all; we keep all data forever without a plan.",
+      "To a small extent; we manually delete old data on an ad-hoc basis.",
+      "To a moderate extent; we have retention policies (e.g., GCS Lifecycle rules) but they are not comprehensive.",
+      "To a large extent; we have automated data retention and archival policies for most of our data.",
+      "To a very large extent; we have a comprehensive, automated data lifecycle management framework governed by policy."
+    ]
+  },
+  {
+    "category": "Data & Analytics Foundation",
+    "question": "How often do you audit your data management practices for quality and compliance?",
+    "description": "Gauges the frequency and rigor of reviewing data management processes to ensure they remain effective and compliant.",
+    "responses": [
+      "Never; we do not audit our data management practices.",
+      "Rarely; we only conduct audits in response to an incident.",
+      "Annually; we conduct a formal audit once a year.",
+      "Regularly; we conduct quarterly audits of our key data practices.",
+      "Continuously; we have automated, continuous auditing and reporting built into our data platform."
+    ]
+  },
+  {
+    "category": "Talent & Expertise",
+    "question": "To what extent do you have employees with skills in AI-related fields?",
+    "description": "Provides a baseline assessment of the in-house talent pool available for AI initiatives.",
+    "responses": [
+      "Not at all; we have no employees with AI skills.",
+      "To a small extent; we have a few individuals with some basic knowledge.",
+      "To a moderate extent; we have a small, dedicated team but lack scale.",
+      "To a large extent; we have multiple teams with strong AI skills.",
+      "To a very large extent; we have a deep and broad pool of expert AI talent across the organization."
+    ]
+  },
+  {
+    "category": "Talent & Expertise",
+    "question": "How well-established are your training programs to upskill your existing staff in AI technologies?",
+    "description": "Evaluates the organization's commitment to developing internal talent, which is crucial for scaling AI capabilities.",
+    "responses": [
+      "Not established; we have no training programs.",
+      "Slightly established; we provide access to online courses but no structured program.",
+      "Moderately established; we have some formal training programs, but they are not widely available.",
+      "Well-established; we have a comprehensive training and development program for AI skills.",
+      "Very well-established; we have a continuous learning culture with personalized development paths and hands-on training opportunities."
+    ]
+  },
+  {
+    "category": "Talent & Expertise",
+    "question": "How effective is your hiring strategy in bringing in new talent with AI skills?",
+    "description": "Assesses the ability to attract and recruit skilled AI professionals from the external market.",
+    "responses": [
+      "Not effective; we are unable to attract or hire AI talent.",
+      "Slightly effective; we have a slow and difficult hiring process for AI roles.",
+      "Moderately effective; we can hire junior talent but struggle to attract senior experts.",
+      "Effective; we have a strong employer brand and are able to attract and hire skilled AI talent.",
+      "Highly effective; we are a destination for top AI talent and have a streamlined, efficient hiring process."
+    ]
+  },
+  {
+    "category": "Talent & Expertise",
+    "question": "How would you rate the understanding of AI by your leadership in terms of making informed decisions and driving AI initiatives?",
+    "description": "Focuses on the AI literacy of the leadership team, which is critical for providing effective sponsorship and strategic direction.",
+    "responses": [
+      "Poor; leadership has a very limited understanding.",
+      "Fair; leadership understands the hype but not the practical implications.",
+      "Average; leadership has a good conceptual understanding but lacks technical depth.",
+      "Good; leadership is well-informed and can engage in meaningful discussions about AI strategy.",
+      "Excellent; leadership has a deep understanding of AI and actively drives the strategy based on informed decisions."
+    ]
+  },
+  {
+    "category": "Talent & Expertise",
+    "question": "How clearly have you defined roles and responsibilities for your AI initiatives?",
+    "description": "Assesses whether a clear organizational structure and governance model exists for AI projects.",
+    "responses": [
+      "Not clearly; roles are ambiguous and undefined.",
+      "Slightly clearly; we have general roles, but responsibilities overlap and cause confusion.",
+      "Moderately clearly; we have defined roles for technical staff, but not for business or governance.",
+      "Clearly; we have well-defined roles and responsibilities for all key stakeholders in our AI initiatives.",
+      "Very clearly; we use a formal framework like RACI and have a clear governance structure."
+    ]
+  },
+  {
+    "category": "Talent & Expertise",
+    "question": "How would you rate your team's ability to collaborate effectively on AI projects, including cross-functional collaboration between technical and non-technical roles?",
+    "description": "Successful AI projects require tight collaboration. This question gauges the effectiveness of teamwork between different functions.",
+    "responses": [
+      "Poor; teams work in silos and there is little to no collaboration.",
+      "Fair; collaboration happens but is often difficult and inefficient.",
+      "Average; technical teams collaborate well, but communication with business teams is a challenge.",
+      "Good; we have effective cross-functional teams that collaborate well.",
+      "Excellent; we have a deeply ingrained culture of cross-functional collaboration, with shared goals and agile processes."
+    ]
+  },
+  {
+    "category": "Talent & Expertise",
+    "question": "How effective are your strategies to retain skilled AI talent in your organization?",
+    "description": "Given the competitive market for AI skills, this assesses the organization's ability to keep its top talent.",
+    "responses": [
+      "Not effective; we have high turnover of AI talent.",
+      "Slightly effective; we rely solely on competitive compensation.",
+      "Moderately effective; we offer good compensation and benefits, but lack career growth opportunities.",
+      "Effective; we provide competitive compensation, challenging projects, and clear career paths.",
+      "Highly effective; we have a holistic retention strategy that includes a great culture, professional development, and high-impact work."
+    ]
+  },
+  {
+    "category": "Talent & Expertise",
+    "question": "How open are you to seeking help from external consultants or outsourcing certain tasks to accelerate your AI projects?",
+    "description": "Evaluates the willingness to leverage external expertise to fill skill gaps or accelerate progress.",
+    "responses": [
+      "Not open; we have a strong 'not invented here' culture.",
+      "Slightly open; we might engage consultants for advice, but not for implementation.",
+      "Moderately open; we are open to outsourcing non-core tasks.",
+      "Open; we strategically partner with external experts to accelerate our key initiatives.",
+      "Very open; we have a flexible staffing model that seamlessly blends internal and external talent."
+    ]
+  },
+  {
+    "category": "Talent & Expertise",
+    "question": "How much consideration do you give to cultural fit and change management skills when hiring for AI roles, given the significant changes that AI can introduce?",
+    "description": "Assesses whether hiring practices look beyond technical skills to find individuals who can help drive cultural change.",
+    "responses": [
+      "None; we only hire based on technical skills.",
+      "Little; it's a minor consideration.",
+      "Some; we consider it for senior roles but not for individual contributors.",
+      "Significant; we consider cultural fit and communication skills to be very important.",
+      "Very significant; change management and collaboration skills are a key part of our hiring criteria for all AI roles."
+    ]
+  },
+  {
+    "category": "Talent & Expertise",
+    "question": "How much do you agree with the statement: 'Our organization is aware of the potential impact of AI on our workforce and has a plan to manage it?'",
+    "description": "Evaluates the proactiveness of the organization in addressing the human side of AI adoption, including workforce planning and reskilling.",
+    "responses": [
+      "Strongly Disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly Agree"
+    ]
+  },
+  {
+    "category": "Innovation Culture",
+    "question": "To what extent is your organization open to the changes that AI adoption may bring to existing processes and workflows?",
+    "description": "Assesses the cultural readiness for process transformation, which is often a major outcome of successful AI implementation.",
+    "responses": [
+      "Not at all open; there is strong resistance to changing existing processes.",
+      "To a small extent; change is accepted reluctantly and only when mandated.",
+      "To a moderate extent; employees are open to change if the benefits are clearly demonstrated.",
+      "To a large extent; our organization is generally adaptable and open to process improvements.",
+      "To a very large extent; our culture actively seeks out opportunities to innovate and transform processes with new technology."
+    ]
+  },
+  {
+    "category": "Innovation Culture",
+    "question": "How much does your organization encourage innovation and experimentation, even if it involves risk of failure?",
+    "description": "A culture that supports experimentation is essential for AI, where not all projects will succeed. This question gauges the organization's tolerance for risk.",
+    "responses": [
+      "Not at all; failure is punished, and experimentation is discouraged.",
+      "Slightly; experimentation is allowed but only with a guaranteed positive outcome.",
+      "Moderately; we have some innovation programs, but there is still a strong fear of failure.",
+      "Largely; we encourage calculated risks and view failures as learning opportunities.",
+      "Very much; innovation and experimentation are core values, and we celebrate learning from both successes and failures."
+    ]
+  },
+  {
+    "category": "Innovation Culture",
+    "question": "How strong is the culture of continuous learning and upskilling in your organization to keep up with evolving technologies like AI?",
+    "description": "Evaluates if learning is seen as a core part of the job, which is necessary to keep pace with the rapid evolution of AI.",
+    "responses": [
+      "Very weak; there is no emphasis on learning or upskilling.",
+      "Weak; learning is seen as something employees should do on their own time.",
+      "Moderate; the organization provides some learning resources and opportunities.",
+      "Strong; we have a strong culture of continuous learning with dedicated time and resources for upskilling.",
+      "Very strong; continuous learning is deeply embedded in our culture, performance management, and career progression."
+    ]
+  },
+  {
+    "category": "Innovation Culture",
+    "question": "How much does your organization promote cross-functional collaboration which is often required for successful AI projects?",
+    "description": "Assesses the degree to which organizational silos are broken down to enable the kind of collaboration AI projects need.",
+    "responses": [
+      "Not at all; the organization is heavily siloed.",
+      "Slightly; collaboration across functions is difficult and not encouraged.",
+      "Moderately; we have some cross-functional projects, but it's not the norm.",
+      "Largely; cross-functional collaboration is encouraged and supported by management.",
+      "Very much; our organization is structured around cross-functional teams and collaboration is a core competency."
+    ]
+  },
+  {
+    "category": "Innovation Culture",
+    "question": "How much does your organization value data-driven decision making, which is a core part of AI implementation?",
+    "description": "Gauges if the culture relies on data and evidence, or on intuition and hierarchy, for making decisions.",
+    "responses": [
+      "Not at all; decisions are made based on gut feeling and seniority.",
+      "Slightly; data is used to support pre-made decisions, but not to make them.",
+      "Moderately; some teams are data-driven, but it's not a widespread cultural trait.",
+      "Largely; data-driven decision making is highly valued and practiced by most teams.",
+      "Very much; it is a fundamental part of our culture, and all major decisions must be backed by data."
+    ]
+  },
+  {
+    "category": "Innovation Culture",
+    "question": "How supportive is your leadership in driving the AI adoption initiative within the organization?",
+    "description": "Assesses whether leadership is actively championing the cultural changes needed for AI, not just funding the technology.",
+    "responses": [
+      "Not supportive; leadership is a barrier to adoption.",
+      "Slightly supportive; leadership is passive and provides no active support.",
+      "Moderately supportive; leadership provides verbal support but does not actively drive change.",
+      "Supportive; leadership actively communicates the importance of AI and supports the necessary changes.",
+      "Very supportive; leadership leads by example and are the primary champions of the AI-driven cultural transformation."
+    ]
+  },
+  {
+    "category": "Innovation Culture",
+    "question": "To what extent are employees involved in the AI adoption process and do they understand the benefits of AI?",
+    "description": "Evaluates the inclusivity of the adoption process, which is key to gaining employee buy-in and reducing fear.",
+    "responses": [
+      "Not at all; AI is a top-down initiative with no employee involvement.",
+      "To a small extent; employees are informed about changes but not involved in the process.",
+      "To a moderate extent; we solicit feedback from employees on some AI initiatives.",
+      "To a large extent; employees are actively involved in identifying use cases and designing solutions.",
+      "To a very large extent; we have a co-creation model where employees are partners in the AI adoption process."
+    ]
+  },
+  {
+    "category": "Innovation Culture",
+    "question": "How would you rate the general awareness and understanding of AI across the organization, beyond the technical teams?",
+    "description": "Gauges the overall AI literacy of the organization, which helps in identifying realistic opportunities and managing expectations.",
+    "responses": [
+      "Poor; there is widespread misunderstanding and fear of AI.",
+      "Fair; awareness is limited to the hype and buzzwords.",
+      "Average; there is a basic, conceptual understanding of what AI is.",
+      "Good; most employees have a good understanding of how AI can benefit the organization.",
+      "Excellent; there is a high level of AI literacy across the organization, with a clear understanding of both its potential and its limitations."
+    ]
+  },
+  {
+    "category": "Innovation Culture",
+    "question": "How effectively is the AI strategy and its benefits communicated across all levels of the organization?",
+    "description": "Assesses the quality and reach of internal communications about AI, which is crucial for alignment and buy-in.",
+    "responses": [
+      "Not effectively; there is no communication about the AI strategy.",
+      "Slightly effectively; communication is limited to senior leadership.",
+      "Moderately effectively; there are some communications, but the message is not always clear or consistent.",
+      "Effectively; there is a clear and consistent communication plan that reaches most employees.",
+      "Very effectively; communication is ongoing, multi-channel, and tailored to different audiences, creating excitement and alignment."
+    ]
+  },
+  {
+    "category": "Innovation Culture",
+    "question": "How aware is your organization of the social implications of AI?",
+    "description": "Gauges the organization's consideration of AI's broader impact on society, beyond its own walls.",
+    "responses": [
+      "Not aware at all.",
+      "Slightly aware, but it's not a topic of discussion.",
+      "Moderately aware; it's discussed within our ethics guidelines.",
+      "Highly aware, and it influences our choice of projects.",
+      "Very aware; we are actively engaged in public discussions and initiatives regarding the social impact of AI."
+    ]
+  },
+  {
+    "category": "Innovation Culture",
+    "question": "How often does your organization conduct training or workshops to improve AI literacy among non-technical staff?",
+    "description": "Evaluates the investment in educating the entire workforce, not just the technical teams.",
+    "responses": [
+      "Never.",
+      "Rarely; only if a specific project requires it.",
+      "Occasionally; we might have a yearly seminar.",
+      "Regularly; we have ongoing training programs available to all employees.",
+      "Frequently; we have a rich and continuous program of workshops, talks, and courses to promote AI literacy."
+    ]
+  },
+  {
+    "category": "Innovation Culture",
+    "question": "Does your organization have a clear and effective process for addressing employee concerns or fears related to AI adoption?",
+    "description": "Assesses the mechanisms in place to manage the human-side of change and provide psychological safety for employees.",
+    "responses": [
+      "No, there is no process.",
+      "No, concerns are generally dismissed.",
+      "Yes, employees can talk to their managers or HR, but there is no formal process.",
+      "Yes, we have a clear process with dedicated channels for employees to raise concerns.",
+      "Yes, we have a proactive process that includes regular town halls, anonymous surveys, and dedicated change agents."
+    ]
+  },
+  {
+    "category": "Responsible AI Principles",
+    "question": "To what extent do your policies ensure the privacy and security of the data used in your AI systems?",
+    "description": "Evaluates if data protection policies are robust and specifically tailored to the unique challenges of AI.",
+    "responses": [
+      "Not at all; we have no specific policies.",
+      "To a small extent; we apply our general IT security policies, but nothing AI-specific.",
+      "To a moderate extent; we have policies, but enforcement and auditing are weak.",
+      "To a large extent; we have strong, enforced policies for data privacy and security in AI.",
+      "To a very large extent; our policies are comprehensive, audited, and we utilize privacy-enhancing technologies."
+    ]
+  },
+  {
+    "category": "Responsible AI Principles",
+    "question": "How effectively do you work to avoid creating or reinforcing unfair bias in your AI systems, in line with Google's AI Principles?",
+    "description": "Assesses the maturity of processes and tools used to detect and mitigate bias in AI models.",
+    "responses": [
+      "Not effectively; we do not test for bias.",
+      "Slightly effectively; we are aware of the problem but have no formal methods to address it.",
+      "Moderately effectively; we perform some manual analysis for bias in our training data.",
+      "Effectively; we use tools like the Vertex AI Model Evaluation or What-If Tool to test for and mitigate bias.",
+      "Very effectively; fairness is a core design requirement, and we have an end-to-end framework for ensuring it."
+    ]
+  },
+  {
+    "category": "Responsible AI Principles",
+    "question": "How well can you explain how your AI system makes decisions, potentially using Vertex AI Explainable AI?",
+    "description": "Evaluates the level of transparency and interpretability of the AI models being used.",
+    "responses": [
+      "Not at all; our models are complete black boxes.",
+      "Slightly well; we can explain the input features but not how the model uses them.",
+      "Moderately well; we use techniques like feature importance to get a general idea.",
+      "Well; we use tools like Vertex AI Explainable AI to understand individual predictions.",
+      "Very well; our systems are designed for interpretability, and we can provide clear explanations to users and auditors."
+    ]
+  },
+  {
+    "category": "Responsible AI Principles",
+    "question": "How transparent is this information of how the AI system makes decisions to those affected by them?",
+    "description": "Assesses whether the explanations for AI decisions are actually communicated to end-users or stakeholders.",
+    "responses": [
+      "Not transparent at all.",
+      "Slightly transparent; information is available but only upon formal request.",
+      "Moderately transparent; we provide some high-level explanations in our documentation.",
+      "Transparent; we provide clear explanations for AI-driven decisions directly within the application.",
+      "Very transparent; we proactively educate users on how the AI works and provide detailed, on-demand explanations."
+    ]
+  },
+  {
+    "category": "Responsible AI Principles",
+    "question": "How do you ensure accountability for your AI systems, making sure they are 'accountable to people'?",
+    "description": "Evaluates the governance structure for assigning responsibility and providing recourse when an AI system fails.",
+    "responses": [
+      "Not at all; there is no clear line of accountability.",
+      "Slightly; accountability is informal and determined on a case-by-case basis.",
+      "Moderately; we have a process for reviewing failures, but accountability is not clearly defined.",
+      "To a large extent; we have clearly defined owners for each AI system who are accountable for its performance.",
+      "To a very large extent; we have a comprehensive governance framework with clear accountability and a formal appeals process for those affected by a decision."
+    ]
+  },
+  {
+    "category": "Responsible AI Principles",
+    "question": "How well-defined and adhered to are your organization's ethical guidelines for the use of AI?",
+    "description": "Assesses if ethical principles exist and if they are practically applied in day-to-day work.",
+    "responses": [
+      "Not well-defined; we have no ethical guidelines for AI.",
+      "Slightly well-defined; we have some high-level principles, but they are not enforced.",
+      "Moderately well-defined; we have clear guidelines, but adherence is inconsistent.",
+      "Well-defined; we have clear guidelines that are well-understood and generally adhered to.",
+      "Very well-defined; our ethical guidelines are a core part of our development process and are enforced through formal reviews and audits."
+    ]
+  },
+  {
+    "category": "Responsible AI Principles",
+    "question": "To what extent are your AI systems compliant with the relevant laws and regulations in your industry and region?",
+    "description": "Evaluates the organization's legal and regulatory compliance posture for its AI applications.",
+    "responses": [
+      "Not at all; we are not sure if we are compliant.",
+      "To a small extent; we believe we are compliant but have not performed a formal assessment.",
+      "To a moderate extent; we are compliant with major regulations but may have gaps in others.",
+      "To a large extent; we have conducted thorough assessments and are confident in our compliance.",
+      "To a very large extent; we have a proactive compliance program that continuously monitors for changes in regulations and ensures our systems adhere."
+    ]
+  },
+  {
+    "category": "Responsible AI Principles",
+    "question": "How effective are your safeguards to ensure AI systems are 'socially beneficial' and prevent misuse?",
+    "description": "Assesses the internal controls in place to ensure AI is used for its intended purpose and not for malicious or unethical activities, in line with Google's principles.",
+    "responses": [
+      "Not effective; we have no safeguards.",
+      "Slightly effective; we rely on employees to 'do the right thing'.",
+      "Moderately effective; we have acceptable use policies but limited technical enforcement.",
+      "Effective; we have strong technical controls, monitoring, and auditing to prevent misuse.",
+      "Highly effective; we have a combination of strong technical controls and a robust ethical culture that actively discourages misuse."
+    ]
+  },
+  {
+    "category": "Responsible AI Principles",
+    "question": "How well-established is your process for obtaining user consent for data collection and use in AI systems?",
+    "description": "Evaluates the transparency and clarity of the process for getting user consent, a cornerstone of ethical data handling.",
+    "responses": [
+      "Not established; we do not obtain user consent.",
+      "Slightly established; consent is buried in long terms and conditions.",
+      "Moderately established; we have a clear consent process, but it's not specific to AI use cases.",
+      "Well-established; we have a clear and specific consent process for data use in AI.",
+      "Very well-established; we use a layered approach to consent, providing users with granular control over how their data is used."
+    ]
+  },
+  {
+    "category": "Responsible AI Principles",
+    "question": "To what extent are procedures in place for human oversight of AI systems in your organization?",
+    "description": "Assesses the implementation of 'human-in-the-loop' processes, especially for high-stakes AI applications.",
+    "responses": [
+      "Not at all; our AI systems are fully autonomous.",
+      "To a small extent; human oversight is ad-hoc and only used when a problem is detected.",
+      "To a moderate extent; we have human oversight for some critical decisions.",
+      "To a large extent; we have a formal process for human review and approval of AI-driven decisions in sensitive areas.",
+      "To a very large extent; human oversight is a core design principle for all our AI systems, with clear escalation paths and intervention capabilities."
+    ]
+  },
+  {
+    "category": "Responsible AI Principles",
+    "question": "How effective is your organization in providing training on ethical considerations in AI for employees involved in AI projects?",
+    "description": "Evaluates the investment in educating technical and business staff on the ethical dimensions of their work.",
+    "responses": [
+      "Not effective; we provide no ethics training.",
+      "Slightly effective; ethics are mentioned as part of a broader compliance training.",
+      "Moderately effective; we have a dedicated module on AI ethics, but it is optional.",
+      "Effective; we have mandatory AI ethics training for all employees involved in AI projects.",
+      "Highly effective; we have ongoing, in-depth ethics training that includes case studies and is integrated into the project lifecycle."
+    ]
+  }
+]
