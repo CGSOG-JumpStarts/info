@@ -1,5 +1,6 @@
-### **Sogeti AI Innovation Pod: Client Onboarding & Readiness Checklist**
 Template checklist document designed for our AI Innovation Pod model. It is structured to be sent to the client right after the Statement of Work (SOW) is signed to prepare for the official start date.
+---
+### **Sogeti AI Innovation Pod: Client Onboarding & Readiness Checklist**
 
 **Project:** `[Project Name]`
 **Client:** `[Client Name]`
