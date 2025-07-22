@@ -80,10 +80,10 @@ To accelerate our understanding of your landscape, please schedule the following
 * `[ ]` **Technical Architecture Deep Dive (90 minutes):**
     * **Goal:** Whiteboard session with your technical lead/architect to review the current system architecture, data flows, and technology stack.
 
-* `[ ]` **Business Process & Value Stream Workshop (90 minutes):**
+* `[ ]` **Business Process & Value Stream Session (90 minutes):**
     * **Goal:** A session with the Business Sponsor and SMEs to walk through the end-to-end business process we are impacting, focusing on pain points and value drivers.
 
-* `[ ]` **Data Discovery Workshop (60 minutes):**
+* `[ ]` **Data Discovery Session (60 minutes):**
     * **Goal:** A session with your data engineers/stewards to understand the schema, quality, and lineage of the primary data sources.
 
 ---
