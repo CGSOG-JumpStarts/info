@@ -1,4 +1,4 @@
-### **Sogeti AI Innovation Pod: Client Onboarding & Readiness Checklist**
+## **Sogeti AI Innovation Pod: Client Onboarding & Readiness Checklist**
 
 **Project:** `[Project Name]`
 **Client:** `[Client Name]`
