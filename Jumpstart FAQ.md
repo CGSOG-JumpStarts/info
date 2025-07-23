@@ -110,3 +110,8 @@ Section 5: Customer Discovery & Engagement
    * A: Reframe the predictability: "For a well-defined problem, a fixed-price project is perfect. But for an innovative project where we expect to learn and adapt, locking into a fixed scope upfront is the riskiest thing we could do. The Pod's retainer model gives you budget predictability on a monthly basis while providing the flexibility to pivot and ensure we build the right solution, not just the one we imagined at the start".
  * Q: What is Sogeti's competitive differentiation against pure-play AI vendors?
    * A: "They sell AI models—we build AI infrastructure." We focus on the 80% of work that happens after choosing an AI model, offering a platform-agnostic approach and real enterprise integration vs. POC demos and vendor lock-in.
+ Of course. Here is the Q&A formatted response for your FAQ document:
+ * Q: What is the difference between a Jump Start and the AI Innovation Pod, and when should I propose one over the other?**
+   * A: A Jump Start is for **planning**; the AI Pod is for **execution**.
+        * Propose a **Jump Start** when the client has a complex or ill-defined problem and needs a strategic plan. It's a short, **two-day discovery experience** designed to deliver an actionable **roadmap** when the path forward is unclear.
+        * Propose an **AI Innovation Pod** when the client has a defined plan and needs to build. It's a long-term, **retainer-based "Innovation as a Service"** partnership for execution, ideal for building a Proof-of-Concept, MVP, or full-scale solution. 
