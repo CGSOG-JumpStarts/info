@@ -160,7 +160,7 @@
 
 
 
-* **`[Type of Client or Client Industry]:`** `Achieved a [Quantifiable Result, e.g., 40% reduction in processing time] with our solution.`
+* **`[Type of Client or Client Industry]:`** `Achieved a [Quantifiable Result, ex., [xx]% reduction in processing time] with our solution.`
 
 
 
