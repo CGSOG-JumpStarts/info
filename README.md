@@ -27,9 +27,9 @@ The **AI Innovation Pod** is a flexible, retainer-based "Innovation as a Service
 * **Goal**: Provide the expertise needed to refine use cases, build Proofs-of-Concept (PoCs) or Minimum Viable Products (MVPs), and provide strategic advisory after a Jump Start.
 * **Process**: Operates on a dynamic allocation model, deploying the right experts at the right time.
 * **Engagement Tiers**:
-    * **Catalyst**: 40 hours/month ($14k) - Ideal for PoCs and feasibility studies.
-    * **Accelerator**: 80 hours/month ($28k) - Ideal for MVP development.
-    * **Transformation**: 160 hours/month ($56k) - Ideal for full product development and deep partnership.
+    * **Ignition**: 40 hours/month ($14k) - Ideal for PoCs and feasibility studies.
+    * **Turbo**: 80 hours/month ($28k) - Ideal for MVP development.
+    * **Overdrive**: 160 hours/month ($56k) - Ideal for full product development and deep partnership.
 * **Primary Documents**: `Sogeti AI Innovation Pod.md` and `Jumpstart FAQ.md`.
 
 ---
