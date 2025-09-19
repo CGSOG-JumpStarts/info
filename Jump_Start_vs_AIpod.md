@@ -53,6 +53,6 @@ Here is a summary of the key differences between the two models:
 | Feature | **AI Jump Start** | **AI Innovation Pod** |
 | :--- | :--- | :--- |
 | **Primary Goal** | **Discovery & Strategic Planning:** Create an actionable roadmap and align on goals. | **Execution & Innovation:** Build, validate, and scale AI solutions to achieve business outcomes. |
-| **Duration** | **Short-Term & Fixed:** Typically a 2-day workshop or a 40-hour advisory engagement. | **Long-Term & Continuous:** An ongoing monthly retainer (e.g., Catalyst, Accelerator, Transformation tiers). |
+| **Duration** | **Short-Term & Fixed:** Typically a 2-day workshop or a 40-hour advisory engagement. | **Long-Term & Continuous:** An ongoing monthly retainer (e.g., Ignition, Turbo, Overdrive tiers). |
 | **Key Metric** | Delivery of a strategic plan and a clear roadmap. | Achievement of measurable business outcomes and KPIs. |
 | **Best For** | Complex, ill-defined problems where the path forward is unclear. | Exploratory R&D, rapid prototyping, and building new products when the goal is clear. |
