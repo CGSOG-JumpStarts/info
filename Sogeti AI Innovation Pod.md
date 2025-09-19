@@ -57,7 +57,7 @@ To effectively communicate the value of the AI Innovation Pod, it is essential t
 * **Traditional Staffing:** Client interaction is often funneled through a single point of contact, such as an Account Manager or Project Manager. While this can streamline communication, it also creates a layer of separation between the client and the experts doing the work. This distance can lead to misunderstandings, slower feedback loops, and a transactional, vendor-client relationship.6  
 * **AI Innovation Pod:** The Pod model is intensely collaborative and client-centric. Key client stakeholders are not just passive recipients of status reports; they are active participants in the innovation process. They are often involved in sprint planning, reviews, and feedback sessions. This direct, continuous communication ensures that the Pod remains tightly aligned with the client's evolving needs and that the final product genuinely solves the intended user and business problems.6
 
-A critical advantage of the Pod model is the way it fundamentally reframes and reduces the client's risk profile for innovation. Traditional, fixed-scope projects require the client to make a large upfront commitment in both time and budget, based on a set of requirements that are often speculative in an R\&D context.6 This front-loads the risk; if the initial assumptions are wrong, the entire investment is jeopardized. The Pod model, by contrast, is engineered for "complex projects where requirements are expected to change".14 Its iterative nature, combined with a tiered retainer pricing structure, allows a client to de-risk innovation. They can begin with a smaller investment (e.g., the "Catalyst" tier) to test a hypothesis or build a proof-of-concept. This initial engagement serves as a low-cost option to validate an idea before committing to a larger-scale investment. This transforms the sales proposition from "Bet big on this one idea" to "Make a prudent, phased investment to strategically de-risk your innovation portfolio." This is a powerful and financially responsible message that resonates with C-level executives and budget holders.
+A critical advantage of the Pod model is the way it fundamentally reframes and reduces the client's risk profile for innovation. Traditional, fixed-scope projects require the client to make a large upfront commitment in both time and budget, based on a set of requirements that are often speculative in an R\&D context.6 This front-loads the risk; if the initial assumptions are wrong, the entire investment is jeopardized. The Pod model, by contrast, is engineered for "complex projects where requirements are expected to change".14 Its iterative nature, combined with a tiered retainer pricing structure, allows a client to de-risk innovation. They can begin with a smaller investment (e.g., the "Ignition" tier) to test a hypothesis or build a proof-of-concept. This initial engagement serves as a low-cost option to validate an idea before committing to a larger-scale investment. This transforms the sales proposition from "Bet big on this one idea" to "Make a prudent, phased investment to strategically de-risk your innovation portfolio." This is a powerful and financially responsible message that resonates with C-level executives and budget holders.
 
 To provide a clear, at-a-glance summary for sales discussions, the following comparison table is an invaluable tool.
 
@@ -90,7 +90,7 @@ Innovation is inherently risky. Many new ideas fail, and the cost of failure can
 
 ### **Value Proposition 4: Built-in Scalability and Flexibility**
 
-Business needs are not static. A project that requires intense focus one quarter may move into a maintenance or slow-growth phase the next. The AI Innovation Pod model is designed with this reality in mind. The model is inherently scalable; a client can easily adjust their level of engagement based on their evolving needs and budget.7 They can scale up from the "Catalyst" tier to the "Transformation" tier during a critical development phase, and then scale back down as priorities shift. This provides an unparalleled level of resource flexibility, allowing the client to precisely match their investment to their strategic priorities without the disruption of dismantling and reassembling a project team.7
+Business needs are not static. A project that requires intense focus one quarter may move into a maintenance or slow-growth phase the next. The AI Innovation Pod model is designed with this reality in mind. The model is inherently scalable; a client can easily adjust their level of engagement based on their evolving needs and budget.7 They can scale up from the "Ignition" tier to the "Overdrive" tier during a critical development phase, and then scale back down as priorities shift. This provides an unparalleled level of resource flexibility, allowing the client to precisely match their investment to their strategic priorities without the disruption of dismantling and reassembling a project team.7
 
 ### **Value Proposition 5: Enhanced Problem-Solving and Innovation**
 
@@ -157,25 +157,25 @@ The current internal naming for our tiers—"full time," "part time," "quarter t
 
 The proposed new tiers are:
 
-* **Tier 1: Catalyst** (40 hours/month at $14,000)  
-  * **Rationale:** The name "Catalyst" suggests initiating a reaction, sparking an idea, or creating change. It positions this tier as the perfect entry point for innovation.  
+* **Tier 1: Ignition** (40 hours/month at $14,000)  
+  * **Rationale:** The name "Ignition" suggests initiating a reaction, sparking an idea, or creating change. It positions this tier as the perfect entry point for innovation.  
   * **Ideal Use Case:** This tier is designed for clients who need to explore an idea, validate a concept, or create an initial strategic plan. It is perfect for a focused design sprint, a technical feasibility study, a proof-of-concept, or developing an initial product roadmap.  
-* **Tier 2: Accelerator** (80 hours/month at $28,000)  
-  * **Rationale:** The name "Accelerator" implies building momentum, increasing speed, and driving growth. It signals a move from exploration to active building.  
+* **Tier 2: Turbo** (80 hours/month at $28,000)  
+  * **Rationale:** The name "Turbo" implies building momentum, increasing speed, and driving growth. It signals a move from exploration to active building.  
   * **Ideal Use Case:** This tier is for clients who have a validated concept and need to build it out. It is ideal for developing a Minimum Viable Product (MVP), conducting active and continuous prototyping, or building out the core features of a new application.  
-* **Tier 3: Transformation** (160 hours/month at $56,000)  
-  * **Rationale:** The name "Transformation" signifies a deep, comprehensive, and impactful partnership. It communicates a commitment to driving fundamental change in the client's business.  
+* **Tier 3: Overdrive** (160 hours/month at $56,000)  
+  * **Rationale:** The name "Overdrive" signifies a deep, comprehensive, and impactful partnership. It communicates a commitment to driving fundamental change in the client's business.  
   * **Ideal Use Case:** This is our most immersive offering, designed for full product development, a large-scale and long-term innovation partnership, or for situations where our Pod is deeply embedded with the client's own teams to drive a major strategic initiative.
 
-This new structure, presented in the table below, transforms a simple price list into a consultative selling tool. It allows the sales team to frame the conversation around the client's strategic objectives ("Are you at the *Catalyst* stage of sparking an idea, or are you ready to *Accelerate* its development?") rather than just their budget.
+This new structure, presented in the table below, transforms a simple price list into a consultative selling tool. It allows the sales team to frame the conversation around the client's strategic objectives ("Are you at the *Ignition* stage of sparking an idea, or are you ready to *Accelerate* its development?") rather than just their budget.
 
 **Table 3: AI Pod Engagement Tiers**
 
 | Tier | Monthly Investment | Monthly Pod Capacity | Ideal Use Case | Key Focus Areas |
 | :---- | :---- | :---- | :---- | :---- |
-| **Catalyst** | $14,000 | 40 hours | **Sparking Innovation:** For clients needing to explore, validate, and plan new AI initiatives. | Proof-of-Concept (PoC), Feasibility Studies, Design Sprints, AI Strategy & Roadmap, Technology Assessment. |
-| **Accelerator** | $28,000 | 80 hours | **Building Momentum:** For clients ready to move from concept to a functional product. | Minimum Viable Product (MVP) Development, Rapid Prototyping, Core Feature Build-out, Pilot Programs. |
-| **Transformation** | $56,000 | 160 hours | **Driving Full-Scale Change:** For clients seeking a deep, long-term innovation partner. | End-to-End Product Development, Large-Scale AI Integration, Co-creation with Client Teams, Business Process Re-engineering. |
+| **Ignition** | $14,000 | 40 hours | **Sparking Innovation:** For clients needing to explore, validate, and plan new AI initiatives. | Proof-of-Concept (PoC), Feasibility Studies, Design Sprints, AI Strategy & Roadmap, Technology Assessment. |
+| **Turbo** | $28,000 | 80 hours | **Building Momentum:** For clients ready to move from concept to a functional product. | Minimum Viable Product (MVP) Development, Rapid Prototyping, Core Feature Build-out, Pilot Programs. |
+| **Overdrive** | $56,000 | 160 hours | **Driving Full-Scale Change:** For clients seeking a deep, long-term innovation partner. | End-to-End Product Development, Large-Scale AI Integration, Co-creation with Client Teams, Business Process Re-engineering. |
 
 ## **Section 6: The Sales Playbook: Articulating Value and Overcoming Objections**
 
@@ -190,7 +190,7 @@ Every client conversation about the Pod must be grounded in value, not cost. The
   * "What is the current monthly cost of the inefficiency this project aims to solve?"  
   * "What is the strategic cost to the business if a competitor launches a similar capability six months before you do?"  
 * **Calculate the Cost of Inaction:** Frame the investment not as a new expense, but as a way to stop an existing loss. Once a potential value is established (e.g., "$50,000/month in new revenue"), the cost of delaying a decision becomes tangible. "Every month we delay starting this project represents $50,000 in revenue you're not capturing. The cost of waiting is far greater than the investment in the Pod".28  
-* **Introduce the ROI Framework:** Use the "5X Rule" as a mental model and a talking point to justify the investment. The goal is to position the Pod's fee as a small fraction of the value it will generate. "Our goal in any partnership is to deliver a return that is at least five times our fee. For an investment of $28,000 a month in our Accelerator Pod, we would be working with you to identify and capture at least $140,000 a month in new value, whether through increased revenue or reduced costs".22
+* **Introduce the ROI Framework:** Use the "5X Rule" as a mental model and a talking point to justify the investment. The goal is to position the Pod's fee as a small fraction of the value it will generate. "Our goal in any partnership is to deliver a return that is at least five times our fee. For an investment of $28,000 a month in our Turbo Pod, we would be working with you to identify and capture at least $140,000 a month in new value, whether through increased revenue or reduced costs".22
 
 ### **Powerful Analogies to Explain the Model**
 
@@ -206,7 +206,7 @@ To counter the sticker shock of the retainer fee, it is crucial to reframe it ag
 
 1. **List the Roles:** Identify the key roles within the AI Pod (e.g., Principal AI Engineer, Senior Data Engineer, UX/UI Designer, Product Strategist).  
 2. **Establish Market Rates:** Using industry data, establish the average fully-loaded hourly contract rates for these high-demand roles.  
-3. **Calculate the Raw Cost:** Multiply the hours in a given tier (e.g., 80 hours for Accelerator) by the market rates. The cost to hire these individuals separately will almost always exceed the Pod's retainer fee.  
+3. **Calculate the Raw Cost:** Multiply the hours in a given tier (e.g., 80 hours for Turbo) by the market rates. The cost to hire these individuals separately will almost always exceed the Pod's retainer fee.  
 4. **Factor in Hidden Costs:** Add a conservative 20-30% overhead to the raw cost to account for recruitment fees, the client's internal management time required to source and vet candidates, and the significant coordination friction of managing multiple independent contractors.  
 5. **Compare and Conclude:** Present the final "True Cost of DIY" next to the Pod's all-inclusive, predictable retainer fee. The conclusion is clear: the Pod is not only more effective operationally but also superior in its financial value and reduced management burden for the client.
 
@@ -219,7 +219,7 @@ Proactively addressing common questions demonstrates expertise and builds trust.
 * **Q: What happens if we don't use all of our allocated Pod capacity in a given month?**  
   * **A:** The retainer model is a "pay for access" agreement that reserves the capacity of our high-demand innovation team for you, ensuring they are available when you need them. This is similar to paying for an insurance policy; you pay for the peace of mind and the guarantee of support, whether a major event occurs that month or not. The value is in the priority access and the long-term partnership, which allows our team to be proactive and continuously think about your challenges, even outside of direct project work. 22  
 * **Q: How is the work prioritized if the Pod is working with multiple clients?**  
-  * **A:** Each engagement tier (Catalyst, Accelerator, Transformation) comes with a specific capacity allocation and a service-level agreement (SLA) for response times and throughput. Our Pod Lead works with each client at the beginning of every sprint to prioritize their backlog and align the team's efforts with their most critical business objectives, ensuring your priorities are always addressed within the agreed-upon capacity.
+  * **A:** Each engagement tier (Ignition, Turbo, Overdrive) comes with a specific capacity allocation and a service-level agreement (SLA) for response times and throughput. Our Pod Lead works with each client at the beginning of every sprint to prioritize their backlog and align the team's efforts with their most critical business objectives, ensuring your priorities are always addressed within the agreed-upon capacity.
 
 ### **Objection Handling Matrix**
 
