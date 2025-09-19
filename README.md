@@ -1,16 +1,16 @@
 # Jumpstart AI Team - Sales Enablement Knowledge Base
 
-## 🎯 Purpose
+## Purpose
 
 This knowledge base contains all the necessary information to help sales teams understand, pitch, and sell the capabilities of the Jumpstart AI team. Use the documents herein to answer questions, generate sales assets, and guide the sales process from initial discovery to contract signing.
 
 ---
 
-## ✨ Core Concepts & Offerings
+## Core Concepts & Offerings
 
 Our value proposition is centered around two core offerings that work together to guide clients from AI ideation to full-scale implementation.
 
-### 🚀 The Jump Start Workshop
+### The Jump Start Workshop
 
 A **Jump Start** is an immersive, **2-day strategic discovery workshop**. It's designed to transform a client's complex business problem into a clear, actionable AI strategy.
 
@@ -20,7 +20,7 @@ A **Jump Start** is an immersive, **2-day strategic discovery workshop**. It's d
 * **Outcome**: A strategic roadmap, prioritized use cases, and technical architecture recommendations.
 * **Primary Document**: `Jump Start Explainer.md`
 
-### 🧠 The AI Innovation Pod
+### The AI Innovation Pod
 
 The **AI Innovation Pod** is a flexible, retainer-based "Innovation as a Service" (IaaS) model. It gives clients ongoing access to a unified, cross-functional team of AI specialists.
 
@@ -34,7 +34,7 @@ The **AI Innovation Pod** is a flexible, retainer-based "Innovation as a Service
 
 ---
 
-## 🗺️ The Customer Journey: From Ideation to Implementation
+## 🗺The Customer Journey: From Ideation to Implementation
 
 Our engagement model follows a phased approach that ensures AI initiatives are strategically aligned, de-risked, and successfully implemented.
 
@@ -49,7 +49,7 @@ Our engagement model follows a phased approach that ensures AI initiatives are s
 
 ---
 
-## 🛠️ How to Use This Knowledge Base: A Guide for the Agent
+## 🛠How to Use This Knowledge Base: A Guide for the Agent
 
 Use this section to map common sales needs to the correct documents in this knowledge base.
 
@@ -65,7 +65,7 @@ Use this section to map common sales needs to the correct documents in this know
 
 ---
 
-## 📁 Document Index
+## Document Index
 
 Here is a complete list of all documents in the knowledge base and their primary purpose.
 
