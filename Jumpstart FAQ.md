@@ -37,15 +37,15 @@ Section 2: About the AI Pods
    * A: It's a single, predictable rate of $350/hour that provides access to the entire Pod's collective capability, not an individual's hourly rate. Clients get comprehensive expertise from various specialists working as a cohesive unit with predictable pricing.
  * Q: What are the new tiered engagement levels for the AI Pod?
    * A: The new tiers are:
-     * Catalyst: 40 hours/month at $14,000.
-     * Accelerator: 80 hours/month at $28,000.
-     * Transformation: 160 hours/month at $56,000.
- * Q: What is the "Catalyst" tier ideal for?
-   * A: The Catalyst tier (40 hours/month) is ideal for clients needing to explore an idea, validate a concept, or create an initial strategic plan. It's perfect for a focused design sprint, a technical feasibility study, a proof-of-concept, or developing an initial product roadmap.
- * Q: What is the "Accelerator" tier designed for?
-   * A: The Accelerator tier (80 hours/month) is for clients who have a validated concept and need to build it out. It's ideal for developing a Minimum Viable Product (MVP), conducting active prototyping, or building core features of a new application.
- * Q: What kind of engagement is the "Transformation" tier suitable for?
-   * A: The Transformation tier (160 hours/month) is our most immersive offering, designed for full product development, a large-scale and long-term innovation partnership, or for situations where the Pod is deeply embedded with the client's own teams to drive a major strategic initiative.
+     * Ignition: 40 hours/month at $14,000.
+     * Turbo: 80 hours/month at $28,000.
+     * Overdrive: 160 hours/month at $56,000.
+ * Q: What is the "Ignition" tier ideal for?
+   * A: The Ignition tier (40 hours/month) is ideal for clients needing to explore an idea, validate a concept, or create an initial strategic plan. It's perfect for a focused design sprint, a technical feasibility study, a proof-of-concept, or developing an initial product roadmap.
+ * Q: What is the "Turbo" tier designed for?
+   * A: The Turbo tier (80 hours/month) is for clients who have a validated concept and need to build it out. It's ideal for developing a Minimum Viable Product (MVP), conducting active prototyping, or building core features of a new application.
+ * Q: What kind of engagement is the "Overdrive" tier suitable for?
+   * A: The Overdrive tier (160 hours/month) is our most immersive offering, designed for full product development, a large-scale and long-term innovation partnership, or for situations where the Pod is deeply embedded with the client's own teams to drive a major strategic initiative.
  * Q: What is the primary value proposition of the AI Innovation Pod for clients?
    * A: The core value is "Innovation as a Service," providing sustained, embedded innovation capability and shifting from a transactional "selling hours" model to delivering "outcomes".
  * Q: How does the Pod accelerate time-to-value for clients?
