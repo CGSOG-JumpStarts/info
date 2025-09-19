@@ -27,7 +27,7 @@ In-Scope Activities & Deliverables:
 | Key Deliverables | Strategic Roadmap, Prioritized Use Cases, Tool Stack Recommendation, Governance Framework |
 Phase 2: Architecture, Design & Enablement (AI Innovation Pod)
 Following the Jump Start, the engagement transitions into a flexible, ongoing partnership with the Sogeti AI Innovation Pod. This moves from strategic planning to active enablement. The Pod provides on-demand access to a cross-functional "brain trust" to ensure the workflows your teams build are secure, scalable, and cost-effective. This phase is delivered via a monthly retainer, giving you access to our entire team at a predictable cost.
-In-Scope Services (Delivered via "Catalyst" or "Accelerator" Pod Tiers):
+In-Scope Services (Delivered via "Ignition" or "Turbo" Pod Tiers):
 1. Low-Code Solution Architecture Design & Review
  * This is our most critical service. Our experts provide architectural blueprints and, more importantly, review the workflows built by your citizen developers to ensure they meet enterprise standards for:
    * Scalability & Cost-Effectiveness: Preventing inefficient designs that drive up API costs or break under load.
@@ -39,11 +39,11 @@ In-Scope Services (Delivered via "Catalyst" or "Accelerator" Pod Tiers):
  * We develop and deliver hands-on training programs and a comprehensive "playbook" for your citizen developers. This empowers your teams to innovate effectively within the safe and secure architectural guardrails our experts have designed.
 | AI Pod Tiers | Monthly Capacity | Ideal Use Case |
 |---|---|---|
-| Catalyst | 40 hours/month | Sparking Innovation: Perfect for initial architecture reviews, prompt library creation, and delivering the first round of citizen developer training. |
-| Accelerator | 80 hours/month | Building Momentum: Ideal for providing ongoing, active review of multiple team workflows, developing advanced solutions, and building out a full Center of Excellence. |
+| Ignition | 40 hours/month | Sparking Innovation: Perfect for initial architecture reviews, prompt library creation, and delivering the first round of citizen developer training. |
+| Turbo | 80 hours/month | Building Momentum: Ideal for providing ongoing, active review of multiple team workflows, developing advanced solutions, and building out a full Center of Excellence. |
 Phase 3: Governance, Operations & Optimization (AI Innovation Pod)
 This is the maturity phase of your low-code AI program, focused on long-term management, security, and optimization. This is delivered through the AI Innovation Pod, ensuring your program remains secure, cost-effective, and aligned with your business strategy as it scales.
-In-Scope Services (Delivered via "Accelerator" or "Transformation" Pod Tiers):
+In-Scope Services (Delivered via "Turbo" or "Overdrive" Pod Tiers):
 1. Ongoing Governance & Cost Management
  * We help you operationalize the governance model by setting up dashboards and alerts to monitor API consumption and platform costs. This provides management with essential visibility and helps allocate costs back to the appropriate departments.
 2. Security & Compliance Audits
@@ -52,5 +52,5 @@ In-Scope Services (Delivered via "Accelerator" or "Transformation" Pod Tiers):
  * As new AI models and platform features are released, our Pod works with you to continuously optimize existing workflows for better performance, lower cost, and enhanced capabilities, ensuring your solutions do not become stale or obsolete.
 | AI Pod Tiers | Monthly Capacity | Ideal Use Case |
 |---|---|---|
-| Accelerator | 80 hours/month | Building Momentum: Well-suited for ongoing governance of a growing number of automations and performing quarterly security audits. |
-| Transformation | 160 hours/month | Driving Full-Scale Change: For a deep, embedded partnership where our Pod acts as the core of your AI Center of Excellence, driving large-scale adoption, continuous optimization, and strategic alignment. |
+| Turbo | 80 hours/month | Building Momentum: Well-suited for ongoing governance of a growing number of automations and performing quarterly security audits. |
+| Overdrive | 160 hours/month | Driving Full-Scale Change: For a deep, embedded partnership where our Pod acts as the core of your AI Center of Excellence, driving large-scale adoption, continuous optimization, and strategic alignment. |
