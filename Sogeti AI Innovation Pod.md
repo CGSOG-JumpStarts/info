@@ -55,8 +55,7 @@ While you gain the collective intelligence of the entire 8-person Pod, every pro
 * **Strategy Lead:** Focuses on the "why" behind the work, ensuring the project delivers measurable business value and aligns with your long-term strategic goals.
 
 * **Your Access to the Full Pod:**
-
-    * Behind your dedicated leads is the full 8-person AI Innovation Pod, comprised of Solution Architects, Gen AI Developers, Business Analysts, and other specialists. This structure ensures that the right expert is deployed at the right time for any given task, from deep technical implementation to strategic roadmapping.
+Behind your dedicated leads is the full 8-person AI Innovation Pod, comprised of Solution Architects, Gen AI Developers, Business Analysts, and other specialists. This structure ensures that the right expert is deployed at the right time for any given task, from deep technical implementation to strategic roadmapping.
 
 
 #### Flexible Resource Allocation
