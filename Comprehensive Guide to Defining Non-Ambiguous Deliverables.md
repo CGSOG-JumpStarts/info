@@ -1687,3 +1687,1165 @@ Detailed scoring criteria for any human evaluation:
 **Example 1: Successful Resolution**
 
 User: "My dashboard isn't loading. What should I do?"
+Persona Response: "I'll help you troubleshoot the dashboard loading issue. Let me guide you through some steps:
+
+1. First, try clearing your browser cache and refreshing the page
+2. If that doesn't work, check if you can access other pages in the application
+3. Verify your internet connection is stable
+
+If none of these resolve the issue, I can escalate this to our technical team. Would you like to try these steps first, or shall I create a support ticket for you?"
+
+**Analysis**: 
+- ✅ Professional, helpful tone
+- ✅ Provides structured troubleshooting steps
+- ✅ Offers escalation path
+- ✅ Asks clarifying question
+
+**Example 2: Out-of-Scope Query**
+
+User: "Can you give me a discount on my subscription?"
+
+Persona Response: "I appreciate your interest in our pricing! However, I'm focused on technical support and don't have access to billing or pricing discussions. I'd be happy to connect you with our sales team who can discuss your subscription options and any available discounts. Would you like me to create a referral for you?"
+
+**Analysis**:
+- ✅ Polite acknowledgment
+- ✅ Clear boundary statement (guardrail)
+- ✅ Offers appropriate handoff
+- ✅ Maintains helpful tone
+
+**Example 3: Escalation Trigger**
+
+User: "This is ridiculous! I've been trying to fix this for hours and nothing works!"
+
+Persona Response: "I understand your frustration, and I apologize for the difficulty you're experiencing. This sounds like it requires more immediate attention than I can provide. Let me connect you with a senior technical specialist who can prioritize your issue. 
+
+I'm transferring your conversation now. They'll have access to our chat history and will reach out within 15 minutes. Is there anything else I should pass along to them about your situation?"
+
+**Analysis**:
+- ✅ Acknowledges frustration (escalation trigger)
+- ✅ Takes ownership and apologizes
+- ✅ Clearly explains escalation
+- ✅ Sets expectation for response time
+- ✅ Offers to gather additional context
+```
+
+#### **Appendix E: Integration Specifications**
+
+```markdown
+## API Specifications
+
+### RAG Query API
+
+**Endpoint**: `POST /api/v1/rag/query`
+
+**Authentication**: Bearer token (OAuth 2.0)
+
+**Rate Limits**: 100 requests per minute per API key
+
+**Request Schema**:
+```json
+{
+  "query": "string (required, max 500 chars)",
+  "context": {
+    "user_id": "string (optional)",
+    "session_id": "string (optional)",
+    "domain": "string (optional, enum: [product, policy, technical])"
+  },
+  "options": {
+    "max_tokens": "integer (optional, default: 500, max: 2000)",
+    "temperature": "float (optional, default: 0.2, range: 0-1)",
+    "top_k": "integer (optional, default: 8, max: 20)",
+    "include_sources": "boolean (optional, default: true)"
+  }
+}
+```
+
+**Response Schema**:
+```json
+{
+  "query_id": "string (UUID)",
+  "answer": "string",
+  "sources": [
+    {
+      "document_id": "string",
+      "title": "string",
+      "url": "string",
+      "relevance_score": "float (0-1)",
+      "excerpt": "string"
+    }
+  ],
+  "confidence": "float (0-1)",
+  "latency_ms": "integer",
+  "metadata": {
+    "model_version": "string",
+    "timestamp": "ISO 8601 datetime"
+  }
+}
+```
+
+**Error Responses**:
+- `400 Bad Request`: Invalid query format
+- `401 Unauthorized`: Invalid or missing authentication
+- `429 Too Many Requests`: Rate limit exceeded
+- `500 Internal Server Error`: System error
+- `503 Service Unavailable`: System maintenance
+
+**Example Request** (cURL):
+```bash
+curl -X POST https://api.example.com/v1/rag/query \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "How do I reset my password?",
+    "options": {
+      "include_sources": true
+    }
+  }'
+```
+
+### Integration Documentation Deliverables:
+- [ ] OpenAPI 3.0 specification (YAML)
+- [ ] Postman collection with examples
+- [ ] Code examples (Python, JavaScript, cURL)
+- [ ] Error handling guide
+- [ ] Authentication setup guide
+```
+
+#### **Appendix F: Success Criteria Summary (One-Page Checklist)**
+
+```markdown
+## Acceptance Criteria Checklist: [Project Name]
+
+**Evaluation Dataset**: EvalSet v1.2 (n=500)
+**Model Configuration**: GPT-4o, temp=0.2, top_p=1
+**Environment**: Pre-Production
+**Acceptance Date**: [Date]
+
+### Functional Requirements
+- [ ] System accepts queries via API endpoint
+- [ ] Returns answers with source citations
+- [ ] Handles all data sources (SharePoint A, B, Confluence C)
+- [ ] Supports concurrent queries (10 users)
+
+### Performance Metrics
+- [ ] Retrieval Recall@8 ≥ 0.85
+- [ ] MRR ≥ 0.60
+- [ ] Answer Faithfulness ≥ 0.90
+- [ ] Attribution Rate ≥ 0.90
+- [ ] P95 Latency ≤ 2.5s
+- [ ] Cost/query ≤ $0.02
+
+### Quality Metrics
+- [ ] Hallucination Rate < 5%
+- [ ] Citation Coverage ≥ 90%
+- [ ] Relevance Score ≥ 4.0/5.0
+
+### Security & Compliance
+- [ ] PII redaction pipeline operational
+- [ ] Zero critical security findings (pen test)
+- [ ] Data residency compliance (US East)
+- [ ] Audit logging enabled
+
+### Observability
+- [ ] Langfuse monitoring configured
+- [ ] Dashboard accessible to client
+- [ ] Alerts configured for latency, cost, errors
+- [ ] All queries logged with trace IDs
+
+### Documentation
+- [ ] Architecture diagram delivered
+- [ ] API documentation complete
+- [ ] User guide delivered
+- [ ] Operations runbook delivered
+- [ ] Evaluation report attached
+
+### Sign-off
+- [ ] Client Product Owner: _________________ Date: _______
+- [ ] Vendor Tech Lead: _________________ Date: _______
+- [ ] Project Manager: _________________ Date: _______
+
+**Pass/Fail**: [PASS / FAIL]
+**Notes**: [Any observations or exceptions]
+```
+
+#### **Appendix G: Architecture Diagrams**
+
+Include system architecture diagrams showing:
+- Data flow (from sources through retrieval to generation)
+- Component interactions
+- Infrastructure setup
+- Integration points
+- Security boundaries
+
+#### **Appendix H: RACI Matrix**
+
+```markdown
+## RACI: Generative AI Project Governance
+
+| Activity | Product Owner | AI Lead | Data Eng | Sec/Privacy | SRE | Vendor |
+|----------|---------------|---------|----------|-------------|-----|--------|
+| Use case definition | A | R | C | C | I | C |
+| Dataset governance | C | R | A | R | I | C |
+| Evaluation & acceptance | A | R | C | C | I | R |
+| Prompt/model versioning | C | R | I | C | I | R |
+| Data pipeline development | C | C | A | C | I | R |
+| Security & privacy review | C | C | C | A | C | C |
+| Production deployment | C | C | C | C | A | R |
+| Incident response | I | C | C | C | A | R |
+| Client communication | A | C | I | I | I | R |
+
+**Legend**:
+- **R** = Responsible (does the work)
+- **A** = Accountable (final authority, signs off)
+- **C** = Consulted (provides input)
+- **I** = Informed (kept in the loop)
+```
+
+---
+
+## **10. Governance & Review Process**
+
+### **10.1 Four-Stage Gate Process**
+
+#### **Gate 1: Pre-SOW Technical Review**
+**Purpose**: Ensure technical feasibility and measurability before client commitment
+
+**Required Artifacts**:
+- [ ] Draft deliverable specifications (using Section 5 templates)
+- [ ] Proposed metrics and thresholds
+- [ ] Evaluation plan outline
+- [ ] Technical risk assessment
+
+**Review Panel**:
+- Solutions Architect (required)
+- AI/ML SME (required)
+- Project Manager (required)
+- Security/Privacy SME (if applicable)
+
+**Approval Criteria**:
+- All metrics are measurable with defined methodology
+- Evaluation datasets can be created/obtained
+- Technical approach is sound
+- Risks identified with mitigation plans
+- Client responsibilities clearly defined
+
+**Outcome**: GO / NO-GO / REVISE
+
+---
+
+#### **Gate 2: Design Phase Review**
+**Purpose**: Validate that implementation plans align with SOW commitments
+
+**Required Artifacts**:
+- [ ] Detailed architecture diagram
+- [ ] Complete evaluation plan with datasets
+- [ ] Observability and logging plan
+- [ ] Security and compliance assessment
+- [ ] Test scenarios for all use cases
+
+**Review Panel**:
+- Technical Architect (required)
+- AI Lead (required)
+- Data Engineer (required)
+- Client Product Owner (required)
+
+**Approval Criteria**:
+- Architecture supports all deliverable requirements
+- All test datasets defined and validated by client
+- Observability plan covers all required metrics
+- Security controls documented
+- Timeline and milestones realistic
+
+**Outcome**: PROCEED / HOLD / REDESIGN
+
+---
+
+#### **Gate 3: Pre-UAT Review**
+**Purpose**: Confirm readiness for client acceptance testing
+
+**Required Artifacts**:
+- [ ] All code complete and merged
+- [ ] Evaluation results on validation set
+- [ ] Observability dashboard operational
+- [ ] Documentation complete (user, admin, API)
+- [ ] Client-approved acceptance test plan
+
+**Review Panel**:
+- AI Lead (required)
+- Project Manager (required)
+- Client Product Owner (required)
+- QA/Testing Lead (required)
+
+**Approval Criteria**:
+- All metrics achieved on internal validation set
+- No critical bugs or security issues
+- Documentation reviewed and approved
+- Acceptance test environment ready
+- Client has validated EvalSet and rubrics
+
+**Outcome**: READY FOR UAT / NOT READY
+
+---
+
+#### **Gate 4: Post-Go-Live Review**
+**Purpose**: Validate production performance and capture lessons learned
+
+**Timeline**: Within 30 days of production deployment
+
+**Required Artifacts**:
+- [ ] Acceptance test report (signed)
+- [ ] Production metrics report (first 30 days)
+- [ ] Incident log and resolution summary
+- [ ] Lessons learned document
+- [ ] Reusable assets for knowledge base
+
+**Review Panel**:
+- Project Manager (required)
+- AI Lead (required)
+- Client Product Owner (required)
+- Operations/SRE (if applicable)
+
+**Approval Criteria**:
+- Live metrics meet acceptance thresholds
+- No unresolved critical issues
+- Client satisfaction confirmed
+- Knowledge transfer complete
+- Deliverables catalogued for reuse
+
+**Outcome**: PROJECT CLOSED / SUPPORT TRANSITION COMPLETE
+
+---
+
+### **10.2 Change Control Process**
+
+#### **Triggers for Change Order**
+
+Any modification to the following requires a formal change order:
+
+**Scope Changes**:
+- Data sources added or removed
+- Additional use cases or personas
+- New tools or integrations
+- Expanded language support
+- Additional environments (dev, staging, prod)
+
+**Technical Changes**:
+- Dataset version changes (EvalSet updated)
+- Model or provider changes (e.g., GPT-4 → Claude)
+- Threshold changes (metric targets adjusted)
+- Schema changes (API, data formats)
+
+**Requirement Changes**:
+- New SLAs or performance requirements
+- Additional security/compliance requirements
+- Expanded user base or load requirements
+- New regulatory requirements
+
+#### **Change Request Template**
+
+```markdown
+## Change Request: [CR-ID]
+
+**Requested By**: [Name, Role]
+**Date**: [Date]
+**Priority**: [Critical / High / Medium / Low]
+
+### Description of Change
+[Clear description of what needs to change and why]
+
+### Business Justification
+[Why is this change needed? What is the impact if not implemented?]
+
+### Impact Analysis
+
+**Scope Impact**:
+- Deliverables affected: [List]
+- New deliverables: [List]
+- Removed deliverables: [List]
+
+**Technical Impact**:
+- Architecture changes required: [Yes/No, describe]
+- New integrations needed: [Yes/No, list]
+- Performance implications: [Describe]
+
+**Schedule Impact**:
+- Additional time required: [X weeks]
+- Affected milestones: [List]
+- New target dates: [List]
+
+**Cost Impact**:
+- Additional budget required: [$X]
+- Cost breakdown: [Detail]
+
+**Risk Impact**:
+- New risks introduced: [List]
+- Mitigation strategies: [Describe]
+
+### Evaluation Impact
+- [ ] Requires new/updated test dataset
+- [ ] Requires new metrics or thresholds
+- [ ] Requires re-evaluation of existing deliverables
+- [ ] Affects acceptance criteria
+
+### Approval
+- [ ] Client Product Owner: _________________ Date: _______
+- [ ] Vendor Project Manager: _________________ Date: _______
+- [ ] Technical Lead: _________________ Date: _______
+
+**Decision**: [APPROVED / REJECTED / DEFERRED]
+**Revised SOW Section**: [Reference to updated SOW sections]
+```
+
+---
+
+### **10.3 Out-of-Scope Examples (Standard Exclusions)**
+
+Include these in every SOW to set clear boundaries:
+
+**Data & Content**:
+- Additional data sources not explicitly listed
+- Real-time data synchronization (unless specified)
+- Complete data cleanup or Master Data Management
+- Content moderation beyond defined guardrails
+- Historical data migration or backfilling
+
+**Infrastructure & Operations**:
+- Enterprise SSO rollout or identity management
+- Multi-region deployment (unless specified)
+- Disaster recovery beyond defined RTO/RPO
+- 24/7 on-call support (unless specified)
+- Production monitoring beyond observability stack
+
+**Customization & Expansion**:
+- Unlimited prompt tuning or optimization
+- Model retraining or fine-tuning (unless specified)
+- Additional languages beyond those listed
+- Mobile app development
+- UI/UX design or frontend development
+
+**Integration & Downstream**:
+- Downstream system refactoring
+- Business process redesign
+- Change management or training programs
+- Staffing of human agents
+- Customer success or adoption programs
+
+**Ongoing Services**:
+- Continuous model improvement (unless specified)
+- Content generation beyond defined volume
+- Ongoing dataset curation
+- Regular security audits (unless specified)
+
+---
+
+## **11. Implementation Guide**
+
+### **11.1 For Sales Teams**
+
+#### **Pre-Sales Discovery**
+
+**Week 1-2: Initial Engagement**
+1. **Understand Business Problem**:
+   - What business outcome is the client trying to achieve?
+   - What metrics will demonstrate success?
+   - What are the constraints (time, budget, data, regulations)?
+
+2. **Assess Technical Feasibility**:
+   - Involve Solutions Architect in discovery calls
+   - Evaluate data availability and quality
+   - Identify integration requirements
+   - Document assumptions and risks
+
+3. **Set Realistic Expectations**:
+   - Use examples from Section 8 to show precision
+   - Explain iterative nature of AI development
+   - Discuss evaluation methodology upfront
+   - Share timelines for similar past projects
+
+**Week 3-4: Scoping Workshop**
+
+**Mandatory: Definition Workshop (2-4 hours with client)**
+
+This is a value-add activity that demonstrates expertise and prevents future disputes.
+
+**Agenda**:
+1. **Review S.M.A.R.T.A.I. Framework** (30 min)
+   - Educate client on importance of precision
+   - Walk through framework components
+
+2. **Define Deliverables Using Templates** (90-120 min)
+   - Use Section 5 templates
+   - Fill out specifications collaboratively
+   - Document in real-time (shared screen)
+   - Capture client terminology and definitions
+
+3. **Co-create Evaluation Plan** (45-60 min)
+   - Define metrics and thresholds together
+   - Discuss test dataset creation
+   - Agree on acceptance process
+   - Document client responsibilities
+
+4. **Document Out-of-Scope** (30 min)
+   - Explicitly state what's NOT included
+   - Prevent future scope creep
+   - Define change control process
+
+**Outputs**:
+- Draft deliverable specifications (using templates)
+- Agreed metrics and thresholds
+- Client-validated evaluation plan
+- Glossary of terms
+- List of assumptions and dependencies
+
+**Week 5: SOW Finalization**
+
+1. **Internal Technical Review**:
+   - Submit to Gate 1 review panel
+   - Address feasibility concerns
+   - Validate metrics are measurable
+   - Confirm resource requirements
+
+2. **Create SOW Document**:
+   - Use structure from Section 9
+   - Include all mandatory appendices
+   - Reference workshop outputs
+   - Ensure traceability
+
+3. **Client Review**:
+   - Walk through SOW with client
+   - Confirm alignment with workshop
+   - Address questions
+   - Obtain sign-off
+
+#### **Sales Toolkit**
+
+**Use these resources in sales process**:
+
+1. **One-Page TL;DR** (Section 0 from Document 2):
+   - Handout for initial client meetings
+   - Establishes credibility
+   - Sets expectations for precision
+
+2. **Example Rewrites** (Section 8):
+   - Show before/after transformations
+   - Demonstrate your rigor
+   - Build confidence
+
+3. **S.M.A.R.T.A.I. Checklist**:
+   - Use in discovery calls
+   - Ensure all criteria covered
+   - Document gaps
+
+4. **Metrics Catalog** (Section 6):
+   - Reference during scoping
+   - Educate clients on options
+   - Build shared vocabulary
+
+#### **Common Sales Objections & Responses**
+
+**Objection**: "This level of detail seems like overkill. Can't we just get started?"
+
+**Response**: "I completely understand the desire to move quickly. However, in our experience, projects that lack this precision at the outset encounter significant delays and cost overruns later. The 2-3 weeks we invest now in defining exact success criteria will save 2-3 months of rework and disputes during delivery. Our track record shows that projects with clear deliverables have 40% faster acceptance and 60% fewer change orders. Would you prefer to invest time upfront or deal with ambiguity during delivery?"
+
+**Objection**: "Your competitors quoted this much simpler and faster."
+
+**Response**: "That's an important consideration. I'd encourage you to ask them specifically how they'll measure success. What exact metrics will they use? What test dataset? How will you know when it's done? If they can't answer these questions precisely, you're at risk of a project that's perpetually 'almost done' but never acceptable. We're positioning ourselves as the mature, reliable AI partner who delivers predictable outcomes. The clarity we provide isn't overhead—it's how we de-risk your investment."
+
+**Objection**: "We want to use Agile/iterative development. This feels too rigid."
+
+**Response**: "Excellent point. These specifications aren't rigid waterfall requirements—they're the target we're iterating toward. In each sprint, we'll measure progress against these defined metrics. The evaluation framework gives us rapid feedback loops. What we're eliminating is ambiguity about the destination, not flexibility in how we get there. We'll iterate on prompts, data processing, and models, but we'll always know if we're making progress because we've defined what 'better' means."
+
+---
+
+### **11.2 For Project Managers**
+
+#### **Project Setup (Week 1)**
+
+1. **Gate 1 Review**:
+   - Facilitate technical review
+   - Document approvals and conditions
+   - Address any concerns before kickoff
+
+2. **Establish Communication Cadence**:
+   - Weekly status meetings
+   - Demo schedule (every 2 weeks recommended)
+   - Escalation procedures
+   - Decision log
+
+3. **Create Project Artifacts**:
+   - Project charter referencing SOW
+   - RACI matrix (use Appendix H template)
+   - Risk register
+   - Issue log
+
+#### **During Execution**
+
+1. **Reference SOW in Every Status Update**:
+   - Track progress against specific acceptance criteria
+   - Use metrics dashboard as discussion focal point
+   - Flag any deviations from plan immediately
+
+2. **Manage Scope Actively**:
+   - Log all change requests (use Section 10.2 template)
+   - Assess impact before agreeing
+   - Document client requests outside scope
+   - Initiate change order process when needed
+
+3. **Track Dependencies**:
+   - Monitor client-provided artifacts (data, test sets, approvals)
+   - Escalate delays impacting critical path
+   - Document assumptions when dependencies unclear
+
+4. **Prepare for Gate Reviews**:
+   - Maintain checklist of gate requirements
+   - Gather artifacts progressively
+   - Don't wait until last minute
+   - Schedule reviews with adequate lead time
+
+#### **Pre-Acceptance (2 weeks before)**
+
+1. **Gate 3 Review**:
+   - Confirm all artifacts ready
+   - Validate metrics on validation set
+   - Ensure documentation complete
+   - Verify acceptance environment
+
+2. **Coordinate Acceptance Run**:
+   - Schedule with all stakeholders
+   - Prepare live dashboard
+   - Test run-through internally
+   - Have backup plan for technical issues
+
+3. **Finalize Documentation**:
+   - Acceptance report template prepared
+   - All appendices updated
+   - Architecture diagram final version
+   - Runbooks reviewed
+
+#### **Acceptance & Closure**
+
+1. **Facilitate Acceptance Run**:
+   - Record session (with permission)
+   - Walk through dashboard live
+   - Address questions immediately
+   - Document any observations
+
+2. **Obtain Sign-off**:
+   - Use checklist from Appendix F
+   - Get signatures on acceptance report
+   - Trigger invoicing (if applicable)
+   - Celebrate with team!
+
+3. **Post-Go-Live Activities**:
+   - Monitor production metrics
+   - Address any initial issues
+   - Schedule Gate 4 review
+   - Capture lessons learned
+
+4. **Knowledge Management**:
+   - Upload reusable artifacts to internal knowledge base
+   - Tag with capabilities, industry, use case
+   - Document lessons learned
+   - Share success story internally
+
+---
+
+### **11.3 For Engineering Teams**
+
+#### **Development Best Practices**
+
+1. **Challenge Vague Requirements Early**:
+   - Don't start work on ambiguous deliverables
+   - Push back to PM/sales with specific questions
+   - Reference this guide's templates
+   - Document assumptions if forced to proceed
+
+2. **Propose Measurement Methodologies**:
+   - Suggest specific metrics from Section 6
+   - Build evaluation harness early (parallel to development)
+   - Test metrics on small datasets first
+   - Get client validation on measurement approach
+
+3. **Version Everything**:
+   - Code: Git with semantic versioning
+   - Prompts: Version-controlled prompt library
+   - Datasets: Versioned with change logs
+   - Models: Track provider, model, version, parameters
+   - Configs: All settings in version control
+
+4. **Build Observability from Day 1**:
+   - Instrument logging before writing business logic
+   - Track every LLM call (input, output, latency, cost)
+   - Use structured logging (JSON)
+   - Create dashboards early
+
+5. **Document Limitations Honestly**:
+   - If something won't work in production like it did in demo, communicate immediately
+   - Document edge cases where system fails
+   - Provide realistic performance expectations
+   - Don't over-promise
+
+#### **Evaluation Development**
+
+1. **Build Test Harness First**:
+   - Create evaluation pipeline before or during development
+   - Make it easy to run (one command)
+   - Automate as much as possible
+   - Include in CI/CD if feasible
+
+2. **Create Multiple Test Sets**:
+   - **Dev Set**: For rapid iteration (small, fast)
+   - **Validation Set**: For tuning (medium size)
+   - **Test Set**: For acceptance (frozen, client-validated)
+   - **Stress Test Set**: Edge cases and adversarial examples
+
+3. **Validate Metrics Early**:
+   - Test metric calculation on known examples
+   - Verify LLM-judge against human labels
+   - Check for bugs in evaluation code
+   - Get client feedback on sample results
+
+4. **Track Progress Continuously**:
+   - Run evaluation on every major change
+   - Plot metrics over time
+   - Share results with PM/client regularly
+   - Identify regressions early
+
+#### **Pre-Delivery Checklist**
+
+Before submitting for acceptance:
+
+- [ ] **Functionality**:
+  - All specified capabilities implemented
+  - Integration tests passing
+  - Error handling comprehensive
+
+- [ ] **Performance**:
+  - Latency measured and within thresholds
+  - Cost per query within budget
+  - Load tested at expected concurrency
+
+- [ ] **Evaluation**:
+  - All metrics computed on test set
+  - Results meet or exceed thresholds
+  - Evaluation report generated
+  - Metrics dashboard operational
+
+- [ ] **Observability**:
+  - Logging enabled and tested
+  - Dashboard accessible to client
+  - Alerts configured
+  - Trace IDs present on all logs
+
+- [ ] **Security**:
+  - Security scan completed (no critical findings)
+  - PII handling validated
+  - Access controls tested
+  - Audit logging enabled
+
+- [ ] **Documentation**:
+  - Architecture diagram updated
+  - API documentation complete and tested
+  - User guide written
+  - Operations runbook complete
+  - Code comments sufficient
+
+- [ ] **Artifacts**:
+  - All deliverable artifacts ready
+  - Evaluation datasets stored and documented
+  - Prompt library versioned
+  - Configuration files included
+
+---
+
+### **11.4 For Client Teams**
+
+#### **How to Use This Guide as a Client**
+
+If you're a client receiving an AI SOW, use this guide to evaluate vendor proposals:
+
+#### **Red Flags to Watch For**
+
+❌ **Vague Metrics**:
+- "95% accuracy" without defining what's measured
+- "High quality" without rubric
+- "Enterprise-grade" without SLAs
+
+❌ **Missing Evaluation Plan**:
+- No test dataset defined
+- No measurement methodology
+- No acceptance criteria
+- Subjective "client satisfaction" as success measure
+
+❌ **Undefined Scope Boundaries**:
+- No out-of-scope section
+- Ambiguous deliverables ("chatbot with personas")
+- No change control process
+
+❌ **Missing Artifacts**:
+- No evaluation dataset to be delivered
+- No documentation commitments
+- No observability plan
+
+❌ **Unrealistic Promises**:
+- "100% accuracy" on open-ended tasks
+- "Zero hallucinations" without caveats
+- Timelines much faster than industry standard
+
+#### **Questions to Ask Vendors**
+
+1. **About Metrics**:
+   - "How exactly will you measure this metric?"
+   - "On what dataset?"
+   - "How will we validate the measurement?"
+   - "What's the baseline we're improving from?"
+
+2. **About Evaluation**:
+   - "When will we create the test dataset?"
+   - "Who validates the test data?"
+   - "How do we know the test is representative?"
+   - "Can we see the evaluation process?"
+
+3. **About Scope**:
+   - "What exactly is NOT included?"
+   - "What happens if we want to add X?"
+   - "What are our responsibilities?"
+   - "What could cause delays?"
+
+4. **About Risk**:
+   - "What are the technical risks?"
+   - "What could prevent success?"
+   - "What assumptions are you making?"
+   - "What happens if metrics aren't met?"
+
+#### **Your Responsibilities as Client**
+
+To ensure project success, clients must:
+
+1. **Participate in Definition Workshop**:
+   - Allocate time for scoping sessions
+   - Bring subject matter experts
+   - Provide honest feedback
+   - Make decisions on trade-offs
+
+2. **Provide Data and Context**:
+   - Share representative data early
+   - Define data sources clearly
+   - Explain business context
+   - Identify edge cases
+
+3. **Create/Validate Test Datasets**:
+   - Allocate SME time for annotation
+   - Provide ground truth labels
+   - Review test scenarios
+   - Sign off on evaluation plan
+
+4. **Make Timely Decisions**:
+   - Review deliverables promptly
+   - Provide feedback within agreed windows
+   - Approve changes or raise concerns quickly
+   - Don't introduce new requirements late
+
+5. **Prepare for Acceptance**:
+   - Allocate time for acceptance testing
+   - Assemble evaluation team
+   - Review acceptance criteria beforehand
+   - Be ready to sign off or articulate concerns
+
+---
+
+## **12. Quick Reference Materials**
+
+### **12.1 One-Page SOW Checklist (Printable)**
+
+```
+□ DELIVERABLE DEFINITION
+  □ Named & typed (capability/asset/stage)
+  □ Uses template from Section 5
+  □ S.M.A.R.T.A.I. criteria met
+  □ Business value stated
+
+□ DATA & SOURCES
+  □ All data sources enumerated & frozen
+  □ Data access confirmed
+  □ Freshness policy defined
+  □ Privacy/security requirements clear
+
+□ MODEL & TECHNOLOGY
+  □ Model/provider specified (name + version)
+  □ All parameters documented
+  □ Infrastructure defined
+  □ Fallback plan stated
+
+□ EVALUATION
+  □ Test dataset named, sized, versioned
+  □ Sampling method defined
+  □ Dataset ownership clear
+  □ Rubric documented with examples
+  □ IAA target set (if human annotation)
+  □ LLM-judge calibrated (if applicable)
+
+□ METRICS & THRESHOLDS
+  □ All metrics from Section 6 catalog
+  □ Thresholds set for each metric
+  □ Measurement method defined
+  □ Baseline documented (if improving existing)
+  □ Performance budgets (latency, cost)
+
+□ ACCEPTANCE CRITERIA
+  □ Binary pass/fail criteria only
+  □ Single frozen run process defined
+  □ Logging/observability specified
+  □ Report format agreed
+  □ Sign-off owner identified
+
+□ OBSERVABILITY
+  □ Monitoring platform specified
+  □ Dashboard requirements defined
+  □ Alert thresholds set
+  □ Logging scope defined
+
+□ SAFETY & SECURITY
+  □ Guardrails defined
+  □ PII handling specified
+  □ Compliance requirements listed
+  □ Security assessment planned
+
+□ OUT-OF-SCOPE
+  □ Explicit exclusions listed
+  □ Change triggers defined
+  □ Change control process documented
+
+□ ARTIFACTS
+  □ Code deliverables listed
+  □ Documentation requirements specified
+  □ Dataset deliverables listed
+  □ Dashboard/observability deliverables
+
+□ TIMELINE
+  □ Milestones with dates
+  □ Dependencies identified
+  □ Review/approval points scheduled
+  □ Acceptance timeline defined
+
+□ APPENDICES (All Mandatory)
+  □ Glossary of Terms
+  □ Evaluation Rubrics
+  □ Test Dataset Specifications
+  □ Example Interactions (if applicable)
+  □ Integration Specifications (if applicable)
+  □ Success Criteria Summary
+  □ Architecture Diagrams
+  □ RACI Matrix
+
+□ GOVERNANCE
+  □ RACI defined
+  □ Communication plan
+  □ Escalation process
+  □ Risk register
+
+□ FINAL REVIEW
+  □ Gate 1 (Pre-SOW) approval obtained
+  □ Client workshop completed
+  □ Internal technical review passed
+  □ Legal review completed (if required)
+  □ Pricing approved
+  □ Client signature obtained
+```
+
+---
+
+### **12.2 Deliverable Definition Block (Copy/Paste Template)**
+
+```markdown
+## Deliverable: [Name]
+
+**Type**: [Capability / Asset / Stage]
+**Stage**: [PoC / Pilot / Production]
+**Owner(s)**: [Client role]
+**Version**: [e.g., 1.0]
+
+### Objective
+[What business problem does this solve?]
+
+### Scope
+**In Scope**:
+- [Item 1]
+- [Item 2]
+
+**Out of Scope**:
+- [Item 1]
+- [Item 2]
+
+### Technical Specification
+**Environment(s)**: [Dev / Pre-Prod / Production]
+**Data Sources (frozen)**: [List with versions]
+**Model & Parameters**: [Provider, model, temperature, top_p, etc.]
+**Infrastructure**: [Cloud provider, region, compute]
+
+### Evaluation
+**Evaluation Dataset**:
+- Name: [e.g., EvalSet v1.2]
+- Size: [n=X]
+- Composition: [Describe]
+- Source: [Origin]
+
+**Metrics & Thresholds**:
+| Metric | Threshold | Method |
+|--------|-----------|--------|
+| [Metric 1] | ≥/≤ [value] | [Method] |
+| [Metric 2] | ≥/≤ [value] | [Method] |
+
+### Acceptance Criteria
+[Binary pass/fail criteria - see Section 6]
+
+### Performance Requirements
+- **P95 Latency**: ≤ [X] seconds
+- **Cost/Query**: ≤ $[X]
+- **Throughput**: [X] queries/second
+
+### Security & Compliance
+- Data Residency: [Region]
+- PII Handling: [Policy]
+- Access Control: [RBAC definition]
+- Compliance: [Standards, e.g., SOC 2]
+
+### Observability
+- Platform: [e.g., Langfuse, Azure AI Foundry]
+- Dashboard: [Link or description]
+- Alerts: [Threshold definitions]
+
+### Artifacts Delivered
+- [ ] [Artifact 1]
+- [ ] [Artifact 2]
+- [ ] Architecture diagram
+- [ ] Evaluation dataset
+- [ ] Acceptance report
+- [ ] Documentation (user, admin, API)
+
+### Timeline
+- Design Review: [Date]
+- Development Complete: [Date]
+- Testing Complete: [Date]
+- Acceptance Run: [Date]
+- Production Deployment: [Date]
+
+### Sign-off
+**Client Product Owner**: _________________ **Date**: _______
+**Vendor Tech Lead**: _________________ **Date**: _______
+**Project Manager**: _________________ **Date**: _______
+```
+
+---
+
+### **12.3 Metric Quick Reference (Common Targets)**
+
+| Use Case | Key Metrics | Typical Targets |
+|----------|-------------|-----------------|
+| **RAG QA** | Recall@K, Faithfulness, Latency | ≥0.85, ≥0.90, ≤2.5s |
+| **Chatbot** | TSR, FCR, Containment | ≥0.80, ≥0.70, ≥0.75 |
+| **Agent Workflow** | Plan Completion, Task Success | ≥0.85, ≥0.80 |
+| **Classification** | Macro F1, Per-class Recall | ≥0.85, ≥0.90 (critical) |
+| **Extraction** | EM per field, F1 per field | ≥0.80, ≥0.85 |
+| **Summarization** | Faithfulness, Coverage, Coherence | ≥0.90, ≥0.85, ≥4.0/5 |
+
+---
+
+### **12.4 Ready-Made Contract Language**
+
+Use these clauses in legal agreements:
+
+#### **Acceptance Clause**
+> "Acceptance shall be determined by a single frozen evaluation run executed in the pre-production environment on the named dataset version (EvalSet v[X.Y]) with the specified model, parameters, and configuration as documented in Appendix [X]. Acceptance criteria are the metric thresholds stated in Section [X] of this SOW. All metric thresholds must be met or exceeded for acceptance to be granted. Any modification to data sources, dataset versions, model/provider, thresholds, parameters, or evaluation environments will be handled via a mutually agreed change order as defined in Section [X]."
+
+#### **Deliverable Artifacts Clause**
+> "The Contractor shall deliver all evaluation artifacts sufficient to reproduce the acceptance run, including: (i) dataset manifests with version identifiers, (ii) evaluation rubric documentation with annotated examples, (iii) complete prompt library with version history, (iv) evaluation harness source code, (v) configuration files specifying all parameters, (vi) metric computation methodology, (vii) complete evaluation run logs, and (viii) acceptance test report with visualizations. These artifacts shall be delivered within [30] days of acceptance and stored in the agreed repository location as specified in Appendix [X]."
+
+#### **Change Control Clause**
+> "Any changes to the following constitute a material change to scope and require a formal change order with mutual written agreement: (i) data sources or data schema, (ii) evaluation dataset version or composition, (iii) model provider, model version, or inference parameters, (iv) acceptance metric definitions or threshold values, (v) performance requirements (latency, cost, throughput), (vi) security or compliance requirements, (vii) integration specifications or API contracts, (viii) deliverable artifacts or documentation requirements, or (ix) project timeline or milestones. Change orders will document impact to scope, schedule, cost, and risk, and require approval from [designated authorities] before implementation."
+
+#### **Client Responsibilities Clause**
+> "The Client shall: (i) provide representative data samples and access to data sources within [X] business days of contract execution, (ii) designate subject matter experts to participate in evaluation dataset creation and validation within [X] weeks, (iii) review and approve evaluation rubrics and acceptance criteria within [X] business days of submission, (iv) provide timely feedback on deliverable reviews within [X] business days, (v) make available necessary system access and API credentials for integrations, (vi) participate in scheduled definition workshops and design reviews, and (vii) provide final acceptance sign-off within [X] business days of satisfactory completion of the acceptance run. Delays in Client responsibilities may result in project timeline adjustments as documented through the change control process."
+
+---
+
+## **Conclusion**
+
+### **The Transformation**
+
+By adopting these practices, your organization will transform from:
+
+**FROM**:
+- ❌ "We'll build a RAG system with 95% accuracy"
+- ❌ Scope disputes and endless iterations
+- ❌ Subjective acceptance criteria
+- ❌ "Almost done" projects that never close
+- ❌ Frustrated teams and unhappy clients
+
+**TO**:
+- ✅ "We'll deliver a RAG QA system achieving Recall@8 ≥0.85, MRR ≥0.60, and Faithfulness ≥0.90 on EvalSet v1.2, measured via a single frozen acceptance run"
+- ✅ Clear boundaries and predictable scope
+- ✅ Binary pass/fail acceptance criteria
+- ✅ Projects that close on time with client satisfaction
+- ✅ Productive teams and delighted clients
+
+### **The Competitive Advantage**
+
+Organizations that implement these practices gain:
+
+1. **Client Trust**: Demonstrate maturity and reliability
+2. **Predictable Delivery**: Reduce variance in project outcomes
+3. **Faster Closeout**: Eliminate acceptance ambiguity
+4. **Higher Margins**: Fewer surprises, less rework
+5. **Reusable IP**: Templated approaches accelerate future projects
+6. **Market Differentiation**: Stand out as the disciplined AI partner
+
+### **Getting Started**
+
+**Week 1**: 
+- Train sales team on S.M.A.R.T.A.I. framework
+- Share example rewrites (Section 8)
+- Schedule first definition workshop
+
+**Week 2-4**:
+- Apply templates to active opportunities
+- Conduct Gate 1 reviews on draft SOWs
+- Build internal metrics library
+
+**Month 2**:
+- Review first projects using new framework
+- Capture lessons learned
+- Refine templates based on experience
+
+**Month 3+**:
+- Make this framework mandatory for all GenAI SOWs
+- Build knowledge base of reusable specifications
+- Measure impact on project success metrics
+
+### **Final Thought**
+
+> **The time invested in defining precise, measurable deliverables pays exponential dividends throughout the project lifecycle. Ambiguity is risk. Clarity is value.**
+
+Every successful GenAI project starts with a clear, unambiguous answer to: **"How will we know when this is done?"**
+
+This guide provides the tools, templates, and processes to answer that question with confidence—every single time.
+
+---
+
+**Document Version**: 2.0  
+**Last Updated**: October 2025  
+**Maintained By**: Solutions Architecture & AI Practice Leadership  
+**Next Review**: January 2026
+
+---
+
+**Appendix I: Document History**
+
+| Version | Date | Changes | Author |
+|---------|------|---------|--------|
+| 1.0 | [Date] | Initial compilation from source documents | [Name] |
+| 2.0 | October 2025 | Comprehensive consolidation and standardization | [Name] |
+
+---
+
+*For questions, clarifications, or suggestions for improvement, contact: [AI Practice Leadership]*
