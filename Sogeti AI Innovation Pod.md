@@ -50,9 +50,9 @@ While you gain the collective intelligence of the entire 8-person Pod, every pro
 
 * **Your Dedicated Leads:**
 
-    * **Engagement Lead:** Your primary point of contact, ensuring delivery excellence, seamless coordination, and alignment with your business objectives.
-    * **Tech Lead:** Guides the technical vision, architecture, and execution, ensuring the solution is robust, scalable, and perfectly suited to your environment.
-    * **Strategy Lead:** Focuses on the "why" behind the work, ensuring the project delivers measurable business value and aligns with your long-term strategic goals.
+* **Engagement Lead:** Your primary point of contact, ensuring delivery excellence, seamless coordination, and alignment with your business objectives.
+* **Tech Lead:** Guides the technical vision, architecture, and execution, ensuring the solution is robust, scalable, and perfectly suited to your environment.
+* **Strategy Lead:** Focuses on the "why" behind the work, ensuring the project delivers measurable business value and aligns with your long-term strategic goals.
 
 * **Your Access to the Full Pod:**
 
