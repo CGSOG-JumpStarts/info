@@ -48,7 +48,7 @@ The pricing model is designed to align with the value proposition. It is a "**Va
 * **What is a "Pod Hour"?** A "Pod Hour" is one hour of focused work from the team on a specific, outcome-oriented task or workstream.
     * If two experts collaborate on building a prototype for one hour, that consumes one Pod Hour.
     * If, in that same hour, three other team members are in a strategy meeting with your stakeholders, that is a separate workstream and consumes a second Pod Hour.
-    * In a single hour of clock time, your project gets the value of two distinct, parallel workstreams. This model is built for velocity.
+    * In a single hour of clock time, your project gets the value of distinct, parallel workstreams. This model is built for velocity.
 
 To make this intuitive, consider these analogies:
 
@@ -98,7 +98,7 @@ Here are answers to the 20 most common questions sales teams and clients may ask
 * **"What is the typical composition of an AI Pod?"**
     * A typical Pod includes a Product Owner/Strategist, an AI/ML Engineer, a Data Engineer, a Cloud DevOps Engineer, and a UX/UI Designer, all working as a single, cohesive unit.
 * **"What are the different tiers of the Pod service?"**
-    * We offer three tiers: **Catalyst** (40 hours/month) for sparking innovation, **Accelerator** (80 hours/month) for building momentum, and **Transformation** (160 hours/month) for driving full-scale change.
+    * We offer three tiers: **Ignition** (40 hours/month) for sparking innovation, **Turbo** (80 hours/month) for building momentum, and **Overdrive** (160 hours/month) for driving full-scale change.
 * **"How do you prioritize work if the Pod serves multiple clients?"**
     * Each engagement tier comes with a specific capacity allocation and SLA. Our Pod Lead works with each client at the beginning of every sprint to prioritize their backlog and align the team's efforts with their most critical objectives.
 * **"What happens to the IP created during the engagement?"**
@@ -106,13 +106,13 @@ Here are answers to the 20 most common questions sales teams and clients may ask
 * **"How does the Pod integrate with our existing teams?"**
     * The Pod model is intensely collaborative. Key client stakeholders are active participants in the innovation process, involved in sprint planning, reviews, and feedback sessions to ensure tight alignment.
 * **"Can we scale our engagement up or down?"**
-    * Yes, the model is inherently scalable. A client can easily adjust their level of engagement (e.g., from Catalyst to Accelerator) based on their evolving needs and budget.
+    * Yes, the model is inherently scalable. A client can easily adjust their level of engagement (e.g., from Ignition to Turbo) based on their evolving needs and budget.
 * **"What are the prerequisites for starting with an AI Pod?"**
     * The main prerequisite is a complex business problem or an innovation initiative where the path to the solution is not clearly defined. A collaborative mindset is also essential.
 * **"How do you ensure knowledge transfer to our team?"**
     * By working in close collaboration with the Pod, your own team members are exposed to and absorb agile methodologies and cutting-edge AI expertise. This close partnership creates a natural and powerful channel for knowledge transfer.
 * **"What is the typical duration of a Pod engagement?"**
-    * Engagements can range from a one-month "Catalyst" sprint to a multi-year "Transformation" partnership. The duration is flexible and tied to your strategic goals.
+    * Engagements can range from a one-month "Ignition" sprint to a multi-year "Overdrive" partnership. The duration is flexible and tied to your strategic goals.
 * **"How does the Pod de-risk innovation?"**
     * Instead of committing to a massive project based on unproven assumptions, a client can engage the Pod to conduct smaller, targeted experiments. This allows you to validate hypotheses and demonstrate tangible progress with a minimal upfront investment.
 * **"What is the '5X Rule'?"**
