@@ -201,7 +201,7 @@ For EACH workflow, the following will be delivered:
 
 ## Framework: SMART-T Deliverable Definition
 
-Every deliverable should meet the SMART-T criteria:
+Every deliverable should meet the SMARTAI criteria:
 
 ### **S - Specific**
 - Exactly what is being delivered?
@@ -228,10 +228,26 @@ Every deliverable should meet the SMART-T criteria:
 - What are intermediate milestones?
 - When will acceptance testing occur?
 
-### **+T - Testable**
-- What is the specific testing methodology?
-- Who performs the testing?
-- What is the acceptance process?
+### **A - Auditable**
+- What is the test data?
+- How are evaluations being conducted?
+- How are logs kept and delivered?
+
+### **A - Interpretable**
+- Are the outputs explainable?
+- Is there a form of tracability?
+- What is the form of confidence scoring?
+
+| Attribute         | Description                                                                     | Example                                                                                    |
+| ----------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **Specific**      | Define precisely what will be built and what it will do.                        | “RAG chatbot for internal policy documents with conversational retrieval over 10k PDFs.”   |
+| **Measurable**    | Quantify performance through defined metrics and evaluation sets.               | “≥85% factual accuracy on 500 QA pairs measured via RAGAS Factuality.”                     |
+| **Achievable**    | Ensure deliverables fit time, data, and budget constraints.                     | “Fine-tuning 10k samples using Azure OpenAI GPT-4-Turbo within 8-week delivery.”           |
+| **Relevant**      | Tie outcomes to measurable business impact.                                     | “Reduces manual RFP response drafting time by 40%.”                                        |
+| **Time-Bound**    | Set delivery windows and validation checkpoints.                                | “Phase 1: prototype in 3 weeks; Phase 2: production in 6 weeks.”                           |
+| **Auditable**     | Deliverables must include test data, evaluation reports, and traceability logs. | “All runs logged in Langfuse; eval results stored in Azure Blob and shared via dashboard.” |
+| **Interpretable** | Model outputs must be explainable with traceability and confidence scoring.     | “RAG includes citation links and confidence scores per response.”                          |
+
 
 ---
 
