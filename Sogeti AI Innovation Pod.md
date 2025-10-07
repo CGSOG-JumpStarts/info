@@ -51,9 +51,7 @@ While you gain the collective intelligence of the entire 8-person Pod, every pro
 * **Your Dedicated Leads:**
 
     * **Engagement Lead:** Your primary point of contact, ensuring delivery excellence, seamless coordination, and alignment with your business objectives.
-
     * **Tech Lead:** Guides the technical vision, architecture, and execution, ensuring the solution is robust, scalable, and perfectly suited to your environment.
-
     * **Strategy Lead:** Focuses on the "why" behind the work, ensuring the project delivers measurable business value and aligns with your long-term strategic goals.
 
 * **Your Access to the Full Pod:**
@@ -66,9 +64,7 @@ While you gain the collective intelligence of the entire 8-person Pod, every pro
 The Pod operates on a dynamic allocation model. Your dedicated leads orchestrate the deployment of the wider team based on your project's evolving needs, ensuring maximum efficiency and impact.
 
 * **Strategy Phase:** Your Strategy Lead collaborates with strategic advisors and business analysts.
-
 * **Architecture Phase:** Your Tech Lead directs solution architects and AI developers.
-
 * **Implementation Planning:** Your Engagement Lead works with delivery specialists and project managers to guide execution.
 
 ### **Team Structure**
