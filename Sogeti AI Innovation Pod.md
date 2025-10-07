@@ -200,7 +200,7 @@ To help clients grasp this concept, it is effective to use analogies from the Sa
 
 ---
 
-### **Introducing the New Tiered Naming Convention**
+### **Introducing the New Tiered Pod Model**
 
 The current internal naming for our tiers—"full time," "part time," "quarter time"—is problematic. It reinforces the very paradigm we are trying to escape, as it is rooted in the language of individual employee time. To align our offering with its value, we must adopt a new naming convention that is aspirational, benefit-oriented, and guides the client toward the right level of engagement based on their strategic goals.
 
@@ -267,14 +267,143 @@ To counter the sticker shock of the retainer fee, it is crucial to reframe it ag
 
 ### **Frequently Asked Questions (FAQ)**
 
-Proactively addressing common questions demonstrates expertise and builds trust.
+Here are answers to the 20 most common questions about the AI Innovation Pod.
 
-* **Q: How do we track the work to ensure we're getting value for our monthly investment?**
-    * **A:** We believe the best way to measure value is by tracking progress against your business goals, not by auditing timesheets. We provide full transparency through a shared project backlog and weekly progress reports that focus on outcomes and velocity. Our success is measured by how quickly we help you achieve your objectives, which is a far more meaningful metric than the number of minutes logged by individuals.
-* **Q: What happens if we don't use all of our allocated Pod capacity in a given month?**
-    * **A:** The retainer model is a **"pay for access"** agreement that reserves the capacity of our high-demand innovation team for you, ensuring they are available when you need them. This is similar to paying for an insurance policy; you pay for the peace of mind and the guarantee of support, whether a major event occurs that month or not. The value is in the priority access and the long-term partnership, which allows our team to be proactive and continuously think about your challenges, even outside of direct project work.
-* **Q: How is the work prioritized if the Pod is working with multiple clients?**
-    * **A:** Each engagement tier (Ignition, Turbo, Overdrive) comes with a specific capacity allocation and a service-level agreement (SLA) for response times and throughput. Our Pod Lead works with each client at the beginning of every sprint to prioritize their backlog and align the team's efforts with their most critical business objectives, ensuring your priorities are always addressed within the agreed-upon capacity.
+
+
+#### Pricing & Value
+
+
+
+1.  **Why is the $350/hour rate so high?**
+
+    It's not an individual's rate. It's a blended access rate for an entire, integrated team of elite specialists, including strategists, architects, and engineers. Sourcing and managing this level of talent individually would be far more expensive and complex.
+
+
+
+2.  **What happens if we don't use all our allocated Pod hours in a month?**
+
+    The retainer is a "pay for access" model that reserves the capacity of our high-demand team for you. This guarantees they are available to proactively work on your challenges. The value is in the priority access and strategic partnership, similar to an insurance policy for innovation.
+
+
+
+3.  **Why can't I just pay for the hours we use (pay-as-you-go)?**
+
+    Billing for hours punishes the efficiency you're looking for and focuses on the wrong metric. Our goal is to solve your problem as quickly as possible. This model aligns our compensation with achieving your business results, not logging time.
+
+
+
+4.  **How do I know I'm not just paying for one person's time at a high rate?**
+
+    Our value is in the integrated output of the team, which we make transparent through outcome-based weekly reports. We track progress against your goals (e.g., "functional prototype delivered"), not just the presence of individuals.
+
+
+
+5.  **How does this model de-risk innovation for me?**
+
+    Traditional fixed-scope projects front-load risk by requiring a large commitment to an unproven idea. The Pod's retainer model allows you to start with a smaller "Catalyst" tier investment to validate an idea *before* committing to a larger-scale build, strategically de-risking your innovation portfolio.
+
+
+
+#### Operations & Logistics
+
+
+
+6.  **How is work prioritized if the Pod is working with other clients?**
+
+    Each engagement tier comes with a specific capacity allocation and service-level agreement (SLA). Our Pod Lead works directly with you at the start of each sprint to prioritize your backlog and align the team's effort with your most critical objectives.
+
+
+
+7.  **How do we track the work to ensure we're getting value?**
+
+    We provide full transparency through a shared project backlog and weekly progress reports that focus on outcomes and velocity, not just timesheets. Success is measured by how quickly we help you achieve your goals.
+
+
+
+8.  **What are the typical deliverables?**
+
+    Deliverables are tied to outcomes, not fixed documents. They can range from a validated proof-of-concept, a functional MVP, a strategic implementation roadmap, or a scalable technical architecture design. The focus is on creating tangible value, not just paperwork.
+
+
+
+9.  **Can the Pod work on-site at our offices?**
+
+    The Pod model is designed for a mix of virtual and on-site collaboration. While most work is done remotely to maximize the efficiency of the entire team, key workshops (like our Jump Starts) and strategic sessions are often most effective when held on-site.
+
+
+
+10. **How quickly can we start an engagement?**
+
+    One of the key benefits of the Pod model is speed. Once the SOW is signed, we can typically kick off an engagement within 1-2 weeks, as the team is pre-assembled and ready to deploy, eliminating lengthy recruiting and onboarding delays.
+
+
+
+#### Comparison & Fit
+
+
+
+11. **How is this different from standard staff augmentation?**
+
+    Staff augmentation provides individuals to fill roles in your existing structure. The AI Pod provides a complete, self-organizing, cross-functional *team* that takes collective ownership of achieving a business outcome. We provide a capability, not just capacity.
+
+
+
+12. **What if my project has a well-defined, fixed scope?**
+
+    If the scope is truly fixed and the problem is well-understood, the Pod may not be the best fit. That scenario is better suited for our traditional, project-based services. The Pod is purpose-built for exploratory projects where requirements are expected to change as we learn.
+
+
+
+13. **Can we select the specific people who will be on our Pod engagement?**
+
+    The value of the Pod is in the flexible allocation of the *entire team's* expertise. You get the right expert at the right time. While you will have consistent points of contact, the model's strength comes from our ability to dynamically deploy specialists (like a cloud architect or UX designer) as needed, rather than assigning a fixed group of people for the entire duration.
+
+
+
+14. **What happens after the Pod engagement ends?**
+
+    Our goal is to build your internal capability, not create dependency. An engagement can conclude with a full knowledge transfer, enabling your team to take over, or it can scale down to a smaller "Catalyst" tier for ongoing advisory and support as needed.
+
+
+
+15. **What if our internal team wants to work alongside the Pod?**
+
+    This is the ideal scenario. The Pod model is intensely collaborative. By embedding your stakeholders and team members in our process (e.g., sprint planning, reviews), we create a powerful channel for knowledge transfer that helps foster a more innovative and agile culture within your organization.
+
+
+
+#### Technical & Governance
+
+
+
+16. **Who owns the Intellectual Property (IP) created by the Pod?**
+
+    As with our standard consulting agreements, the client owns the IP for the specific work product and code created during the engagement. Our underlying frameworks and methodologies remain Sogeti's property.
+
+
+
+17. **What technologies and platforms do you specialize in?**
+
+    Our approach is infrastructure-first and vendor-agnostic. We have deep expertise across all major hyperscalers (Azure, AWS, Google Cloud) and AI frameworks (e.g., LangChain, LlamaIndex, Semantic Kernel). We focus on building the right solution for your business, not pushing a specific platform.
+
+
+
+18. **How do you ensure our data remains secure and confidential?**
+
+    Security and governance are foundational to our process. We operate within your environment (e.g., your Azure subscription) whenever possible, ensuring your data never leaves your control. All engagements are covered by strict confidentiality agreements.
+
+
+
+19. **What if we need a skill that isn't listed in the Pod composition?**
+
+    The core Pod team contains the most commonly required skills for AI innovation. However, the Pod is part of the broader Sogeti and Capgemini network. If a highly specialized skill is required, we can pull in experts from across the global organization as needed.
+
+
+
+20. **We already have a data science team. How would the Pod work with them?**
+
+    The Pod is designed to augment and accelerate your existing teams. We can partner with your data scientists to handle the complex infrastructure, engineering, and UX design work they may not be staffed for, freeing them up to focus on core model development. We act as a force multiplier for your internal talent.
 
 ---
 
