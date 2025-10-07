@@ -193,19 +193,6 @@ Every deliverable should meet the **S.M.A.R.T.A.I.** criteria—a GenAI adaptati
 | **A - Auditable** | Deliverables must include test data, evaluation reports, and traceability logs | - Can results be reproduced? <br>- Are all runs logged? <br>- Is there a clear audit trail? | "All runs logged in Langfuse; eval results stored in Azure Blob and shared via dashboard" |
 | **I - Interpretable** | Model outputs must be explainable with traceability and confidence scoring | - Can we explain decisions? <br>- Are sources traceable? <br>- Is confidence indicated? | "RAG includes citation links and confidence scores per response" |
 
-### **4.1 Alternative Framework: S.M.A.R.T.-T**
-
-For teams preferring the traditional SMART with an additional T:
-
-- **S** - Specific
-- **M** - Measurable  
-- **A** - Achievable
-- **R** - Relevant
-- **T** - Time-bound
-- **+T** - **Testable** (How will we verify success?)
-
-Both frameworks work; choose one and use it consistently across all SOWs.
-
 ---
 
 ## **5. Detailed Specification Templates**
